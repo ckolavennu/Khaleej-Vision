@@ -1,0 +1,247 @@
+/* Khaleej Vision homepage hero — photographic mockup direction */
+
+.home-page .site-header{
+  background:#07111c;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.home-page .nav-wrap{
+  height:126px;
+}
+
+.home-page .kv-brand-logo{
+  width:430px !important;
+  max-width:34vw !important;
+  height:auto !important;
+}
+
+.home-page .brand-lockup,
+.home-page .kv-selected-logo-lockup{
+  min-width:430px !important;
+}
+
+.home-page .desktop-nav{
+  gap:42px;
+}
+
+.home-page .btn-nav{
+  min-height:64px;
+  padding:0 34px;
+}
+
+.home-photo-hero{
+  position:relative;
+  min-height:max(820px,100vh);
+  overflow:hidden;
+  color:#fff;
+  background:
+    radial-gradient(circle at 55% 38%,rgba(36,72,96,.18),transparent 32%),
+    linear-gradient(90deg,#07111c 0%,#07111c 34%,#0a1622 46%,#0b1825 100%);
+}
+
+.home-photo-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:2;
+  opacity:.08;
+  background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:70px 70px;
+  mask-image:linear-gradient(to right,transparent 0%,transparent 30%,#000 67%,#000 100%);
+}
+
+.home-hero-photo{
+  position:absolute;
+  z-index:1;
+  top:126px;
+  right:0;
+  bottom:0;
+  left:39%;
+  overflow:hidden;
+  background:#0a1622;
+}
+
+.home-hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  display:block;
+  filter:saturate(.96) contrast(1.03) brightness(.97);
+}
+
+.home-hero-photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,#07111c 0%,rgba(7,17,28,.93) 5%,rgba(7,17,28,.55) 18%,rgba(7,17,28,.16) 38%,rgba(7,17,28,0) 60%),
+    linear-gradient(0deg,rgba(4,10,17,.12),rgba(4,10,17,.02) 58%,rgba(4,10,17,.14));
+}
+
+.home-hero-inner{
+  position:relative;
+  z-index:4;
+  min-height:max(820px,100vh);
+  display:flex;
+  align-items:center;
+  padding-top:168px;
+  padding-bottom:110px;
+}
+
+.home-hero-copy{
+  width:43%;
+  max-width:660px;
+}
+
+.home-hero-title{
+  margin:0;
+  color:#fff;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(58px,5.35vw,92px);
+  font-weight:600;
+  line-height:.94;
+  letter-spacing:-.035em;
+}
+
+.home-hero-title .gold-dot{
+  color:var(--gold-light);
+}
+
+.home-hero-lead{
+  max-width:555px;
+  margin:34px 0 36px;
+  color:rgba(255,255,255,.77);
+  font-size:18px;
+  line-height:1.72;
+}
+
+.home-photo-hero .hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+}
+
+.home-photo-hero .hero-actions .btn{
+  min-width:278px;
+  min-height:70px;
+  font-size:12px;
+  letter-spacing:.09em;
+}
+
+.home-photo-hero .btn-outline{
+  border-color:rgba(221,187,106,.72);
+}
+
+.home-photo-hero .btn-outline:hover{
+  border-color:var(--gold-light);
+  color:var(--gold-light);
+}
+
+.home-hero-motto{
+  position:absolute;
+  z-index:5;
+  left:max(32px,calc((100vw - min(var(--container),calc(100vw - 64px)))/2));
+  bottom:52px;
+  display:flex;
+  align-items:center;
+  gap:24px;
+  color:rgba(255,255,255,.43);
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+
+.home-hero-motto::before{
+  content:"";
+  width:42px;
+  height:2px;
+  background:var(--gold);
+}
+
+body.rtl .home-hero-copy{
+  margin-left:auto;
+  margin-right:0;
+  text-align:right;
+}
+
+body.rtl .home-hero-title{
+  font-family:Tahoma,"Segoe UI",Arial,sans-serif;
+  line-height:1.32;
+  letter-spacing:0;
+}
+
+body.rtl .home-hero-photo{
+  right:39%;
+  left:0;
+}
+
+body.rtl .home-hero-photo::after{
+  background:
+    linear-gradient(270deg,#07111c 0%,rgba(7,17,28,.93) 5%,rgba(7,17,28,.55) 18%,rgba(7,17,28,.16) 38%,rgba(7,17,28,0) 60%),
+    linear-gradient(0deg,rgba(4,10,17,.12),rgba(4,10,17,.02) 58%,rgba(4,10,17,.14));
+}
+
+body.rtl .home-hero-motto{
+  left:auto;
+  right:max(32px,calc((100vw - min(var(--container),calc(100vw - 64px)))/2));
+}
+
+@media(max-width:1350px){
+  .home-page .kv-brand-logo{width:370px !important;max-width:30vw !important}
+  .home-page .brand-lockup,.home-page .kv-selected-logo-lockup{min-width:370px !important}
+  .home-photo-hero .hero-actions{gap:14px}
+  .home-photo-hero .hero-actions .btn{min-width:230px;padding:0 20px}
+  .home-hero-copy{width:45%}
+}
+
+@media(max-width:1180px){
+  .home-page .kv-brand-logo{width:310px !important;max-width:31vw !important}
+  .home-page .brand-lockup,.home-page .kv-selected-logo-lockup{min-width:310px !important}
+  .home-photo-hero .home-hero-photo{left:43%}
+  body.rtl .home-photo-hero .home-hero-photo{left:0;right:43%}
+  .home-hero-title{font-size:clamp(54px,5.5vw,76px)}
+}
+
+@media(max-width:980px){
+  .home-page .nav-wrap{height:92px}
+  .home-page .kv-brand-logo{width:270px !important;max-width:58vw !important}
+  .home-page .brand-lockup,.home-page .kv-selected-logo-lockup{min-width:0 !important}
+  .home-photo-hero{min-height:880px}
+  .home-hero-photo{inset:92px 0 0 0}
+  body.rtl .home-hero-photo{inset:92px 0 0 0}
+  .home-hero-photo::after,
+  body.rtl .home-hero-photo::after{
+    background:
+      linear-gradient(90deg,rgba(7,17,28,.97) 0%,rgba(7,17,28,.90) 40%,rgba(7,17,28,.50) 72%,rgba(7,17,28,.28) 100%),
+      linear-gradient(0deg,rgba(4,10,17,.58),rgba(4,10,17,.06) 58%,rgba(4,10,17,.20));
+  }
+  body.rtl .home-hero-photo::after{
+    background:
+      linear-gradient(270deg,rgba(7,17,28,.97) 0%,rgba(7,17,28,.90) 40%,rgba(7,17,28,.50) 72%,rgba(7,17,28,.28) 100%),
+      linear-gradient(0deg,rgba(4,10,17,.58),rgba(4,10,17,.06) 58%,rgba(4,10,17,.20));
+  }
+  .home-hero-inner{min-height:880px;padding-top:150px;padding-bottom:120px;align-items:center}
+  .home-hero-copy{width:72%;max-width:640px}
+  .home-hero-title{font-size:64px}
+}
+
+@media(max-width:620px){
+  .home-page .nav-wrap{height:78px}
+  .home-page .kv-brand-logo{width:220px !important;max-width:68vw !important}
+  .home-photo-hero{min-height:820px}
+  .home-hero-photo{top:78px}
+  .home-hero-photo img{object-position:61% center}
+  .home-hero-inner{min-height:820px;padding-top:118px;padding-bottom:110px}
+  .home-hero-copy{width:100%;max-width:100%}
+  .home-hero-title{font-size:48px}
+  .home-hero-lead{font-size:15px;max-width:92%;margin:26px 0 30px}
+  .home-photo-hero .hero-actions{flex-direction:column;align-items:stretch;width:min(100%,340px)}
+  .home-photo-hero .hero-actions .btn{width:100%;min-width:0;min-height:56px}
+  .home-hero-motto{left:14px;right:14px;bottom:24px;font-size:8px;letter-spacing:.15em;gap:12px}
+  body.rtl .home-hero-motto{left:14px;right:14px}
+}
