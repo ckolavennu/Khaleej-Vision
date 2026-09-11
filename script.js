@@ -14,7 +14,7 @@
     targets.forEach(target => {
       target.innerHTML = `
         <img class="kv-brand-logo"
-             src="assets/khaleej-vision-option3-selected-dark.svg"
+             src="assets/khaleej-vision-option3-selected-dark.png"
              alt="Khaleej Vision — Land Surveying & Engineering Consultancy">`;
       target.classList.add('kv-selected-logo-lockup');
     });
