@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 260" role="img" aria-label="Khaleej Vision logo">
+  <defs>
+    <style>
+      .gold{fill:#DDBB6A;stroke:#DDBB6A}
+      .ivory{fill:#F7F4ED;stroke:#F7F4ED}
+      .navy{fill:#0B1623;stroke:#0B1623}
+      .title{font-family: Georgia, 'Times New Roman', serif; font-size: 60px; letter-spacing: 4px; font-weight: 700;}
+      .subtitle{font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; letter-spacing: 4px; font-weight: 500;}
+    </style>
+  </defs>
+  <g transform="translate(25,15)">
+    <rect x="78" y="18" width="54" height="50" rx="4" class="gold" stroke-width="4"/>
+    <rect x="87" y="27" width="36" height="32" rx="3" class="navy" stroke-width="0"/>
+    <circle cx="105" cy="43" r="9.5" class="gold" stroke-width="3"/>
+    <rect x="73" y="32" width="8" height="24" rx="2" class="gold" stroke-width="0"/>
+    <rect x="129" y="32" width="8" height="24" rx="2" class="gold" stroke-width="0"/>
+    <rect x="89" y="73" width="32" height="9" rx="2" class="gold" stroke-width="0"/>
+    <path d="M84 84 L126 84 L120 94 L90 94 Z" class="gold" stroke-width="0"/>
+    <rect x="102" y="94" width="6" height="58" class="gold" stroke-width="0"/>
+    <line x1="108" y1="110" x2="135" y2="92" class="gold" stroke-width="5" stroke-linecap="round"/>
+    <line x1="108" y1="118" x2="133" y2="136" class="gold" stroke-width="5" stroke-linecap="round"/>
+    <line x1="105" y1="102" x2="48" y2="205" class="ivory" stroke-width="6" stroke-linecap="round"/>
+    <line x1="105" y1="102" x2="162" y2="205" class="gold" stroke-width="6" stroke-linecap="round"/>
+    <line x1="105" y1="112" x2="105" y2="205" class="ivory" stroke-width="5" stroke-linecap="round"/>
+    <line x1="39" y1="205" x2="57" y2="205" class="ivory" stroke-width="4" stroke-linecap="round"/>
+    <line x1="153" y1="205" x2="171" y2="205" class="gold" stroke-width="4" stroke-linecap="round"/>
+    <line x1="97" y1="205" x2="113" y2="205" class="ivory" stroke-width="4" stroke-linecap="round"/>
+    <line x1="24" y1="210" x2="186" y2="210" class="ivory" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+  </g>
+  <g transform="translate(245,0)">
+    <text x="0" y="105" class="title"><tspan class="gold">KHALEEJ</tspan><tspan dx="14" class="ivory">VISION</tspan></text>
+    <text x="3" y="145" class="subtitle ivory" opacity="0.82">LAND SURVEYING &amp; ENGINEERING CONSULTANCY</text>
+  </g>
+</svg>
