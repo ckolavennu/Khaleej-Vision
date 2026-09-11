@@ -6,27 +6,32 @@
   <meta name="description" content="Khaleej Vision — Land Surveying & Engineering Consultancy in Oman. Part of Pearl Island LLC.">
   <title>Khaleej Vision | Land Surveying & Engineering Consultancy</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hero-photo.css">
 </head>
-<body>
+<body class="home-page">
   <div class="page-noise" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand-lockup" href="index.html" aria-label="Khaleej Vision home">
         <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true"><ellipse cx="60" cy="60" rx="44" ry="25" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="60" cy="60" r="15" fill="none" stroke="currentColor" stroke-width="5"/><line x1="60" y1="8" x2="60" y2="112" stroke="currentColor" stroke-width="3"/><line x1="8" y1="60" x2="112" y2="60" stroke="currentColor" stroke-width="3"/><path d="M32 76 C48 66,72 66,88 76" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
         <span class="brand-text"><strong>KHALEEJ VISION</strong><small>LAND SURVEYING &amp; ENGINEERING CONSULTANCY</small></span>
       </a>
+
       <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="index.html" aria-current="page" data-en="Home" data-ar="الرئيسية">Home</a>
         <a href="about.html" data-en="About" data-ar="من نحن">About</a>
         <a href="services.html" data-en="Services" data-ar="خدماتنا">Services</a>
         <a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a>
       </nav>
+
       <div class="nav-actions">
         <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
         <a class="btn btn-gold btn-nav" href="contact.html" data-en="Request a Consultation" data-ar="اطلب استشارة">Request a Consultation</a>
         <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu"><span></span><span></span></button>
       </div>
     </div>
+
     <div class="mobile-menu" id="mobileMenu">
       <a href="index.html" aria-current="page" data-en="Home" data-ar="الرئيسية">Home</a>
       <a href="about.html" data-en="About" data-ar="من نحن">About</a>
@@ -37,20 +42,46 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow" data-en="LAND SURVEYING & ENGINEERING CONSULTANCY · OMAN" data-ar="المساحة والاستشارات الهندسية · سلطنة عُمان">LAND SURVEYING & ENGINEERING CONSULTANCY · OMAN</div>
-          <h1 class="display-title" data-en="See the Land Clearly.<br>Build with Confidence." data-ar="رؤية أوضح للأرض.<br>وبناء بثقة.">See the Land Clearly.<br>Build with Confidence.</h1>
-          <p class="hero-lead" data-en="Professional survey consultancy and topographical & engineering surveying services, supported by practical engineering expertise." data-ar="خدمات احترافية للاستشارات المساحية والرفع الطبوغرافي والمسح الهندسي، مدعومة بخبرة هندسية عملية.">Professional survey consultancy and topographical & engineering surveying services, supported by practical engineering expertise.</p>
-          <div class="hero-actions"><a class="btn btn-gold" href="contact.html" data-en="Request a Consultation" data-ar="اطلب استشارة">Request a Consultation</a><a class="btn btn-outline" href="services.html" data-en="Explore Our Services" data-ar="استكشف خدماتنا">Explore Our Services</a></div>
-          <div class="parent-note"><span class="parent-line"></span><span data-en="Part of PEARL ISLAND LLC" data-ar="جزء من PEARL ISLAND LLC">Part of PEARL ISLAND LLC</span></div>
-        </div>
-        <div class="hero-visual" aria-label="Abstract surveying visualization">
-          <div class="visual-frame"><div class="terrain terrain-a"></div><div class="terrain terrain-b"></div><div class="terrain terrain-c"></div><div class="instrument"><div class="instrument-head"><div class="lens"></div></div><div class="instrument-neck"></div><div class="tripod tripod-left"></div><div class="tripod tripod-mid"></div><div class="tripod tripod-right"></div></div><div class="coord coord-a">23°35' N</div><div class="coord coord-b">58°24' E</div><div class="coord coord-c">KV / 2026</div></div>
+    <section class="home-photo-hero">
+      <div class="home-hero-photo" aria-hidden="true">
+        <img id="homeHeroImage" alt="">
+      </div>
+
+      <div class="container home-hero-inner">
+        <div class="home-hero-copy">
+          <h1
+            class="home-hero-title"
+            data-en="See the Land<br>Clearly<span class='gold-dot'>.</span><br>Build with<br>Confidence<span class='gold-dot'>.</span>"
+            data-ar="رؤية أوضح<br>للأرض<span class='gold-dot'>.</span><br>وبناء<br>بثقة<span class='gold-dot'>.</span>"
+          >
+            See the Land<br>
+            Clearly<span class="gold-dot">.</span><br>
+            Build with<br>
+            Confidence<span class="gold-dot">.</span>
+          </h1>
+
+          <p
+            class="home-hero-lead"
+            data-en="Professional survey consultancy and topographical & engineering surveying services, supported by practical engineering expertise."
+            data-ar="خدمات احترافية للاستشارات المساحية والرفع الطبوغرافي والمسح الهندسي، مدعومة بخبرة هندسية عملية."
+          >
+            Professional survey consultancy and topographical & engineering surveying services, supported by practical engineering expertise.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="contact.html" data-en="Request a Consultation" data-ar="اطلب استشارة">Request a Consultation</a>
+            <a class="btn btn-outline" href="services.html" data-en="Explore Our Services" data-ar="استكشف خدماتنا">Explore Our Services</a>
+          </div>
         </div>
       </div>
-      <div class="trust-strip"><div class="container trust-grid"><div><span>01</span><strong data-en="Precision" data-ar="الدقة">Precision</strong></div><div><span>02</span><strong data-en="Technical Expertise" data-ar="الخبرة الفنية">Technical Expertise</strong></div><div><span>03</span><strong data-en="Reliable Project Support" data-ar="دعم موثوق للمشاريع">Reliable Project Support</strong></div><div><span>04</span><strong data-en="Serving Oman" data-ar="نخدم سلطنة عُمان">Serving Oman</strong></div></div></div>
+
+      <div
+        class="home-hero-motto"
+        data-en="SURVEYING TODAY FOR A STRONGER TOMORROW"
+        data-ar="مساحة اليوم لبناء غدٍ أقوى"
+      >
+        SURVEYING TODAY FOR A STRONGER TOMORROW
+      </div>
     </section>
 
     <section class="section home-intro">
@@ -71,6 +102,8 @@
     </div>
     <div class="container footer-bottom"><span>© 2026 Khaleej Vision</span><span data-en="A Pearl Island LLC Company" data-ar="إحدى شركات Pearl Island LLC">A Pearl Island LLC Company</span></div>
   </footer>
+
+  <script src="hero-photo.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
