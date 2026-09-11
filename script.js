@@ -7,102 +7,64 @@
   const contactForm = document.getElementById('contactForm');
   const header = document.querySelector('.site-header');
 
-  /*
-   * Build the website lockup from the ORIGINAL logo artwork already in
-   * assets/khaleej-vision-logo.png. We crop the emblem and the two wordmark
-   * regions from that artwork and recolour them for the navy website chrome.
-   * No replacement/recreated logo symbol is used.
-   */
+  // Use the selected total-station / KV tripod logo on every page.
   function installBrandLogos() {
     const targets = document.querySelectorAll('.brand-lockup, .footer-lockup');
 
-    targets.forEach((target, index) => {
-      const goldFilter = `kv-gold-mask-${index}`;
-      const ivoryFilter = `kv-ivory-mask-${index}`;
-      const isFooter = target.classList.contains('footer-lockup');
-
+    targets.forEach(target => {
       target.innerHTML = `
-        <svg class="kv-original-lockup${isFooter ? ' kv-original-lockup-footer' : ''}"
-             viewBox="0 0 700 150" role="img"
-             aria-label="Khaleej Vision — Land Surveying & Engineering Consultancy">
-          <defs>
-            <filter id="${goldFilter}" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB">
-              <feColorMatrix in="SourceGraphic" type="matrix"
-                values="0 0 0 0 0
-                        0 0 0 0 0
-                        0 0 0 0 0
-                        -1.2 -1.2 -1.2 0 3.55" result="nonWhite" />
-              <feFlood flood-color="#DDBB6A" result="brandGold" />
-              <feComposite in="brandGold" in2="nonWhite" operator="in" />
-            </filter>
-            <filter id="${ivoryFilter}" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB">
-              <feColorMatrix in="SourceGraphic" type="matrix"
-                values="0 0 0 0 0
-                        0 0 0 0 0
-                        0 0 0 0 0
-                        -1.2 -1.2 -1.2 0 3.55" result="nonWhite" />
-              <feFlood flood-color="#F7F4ED" result="brandIvory" />
-              <feComposite in="brandIvory" in2="nonWhite" operator="in" />
-            </filter>
-          </defs>
-
-          <!-- Original eye / terrain / building emblem crop -->
-          <svg x="0" y="2" width="182" height="140" viewBox="250 180 755 580" overflow="hidden">
-            <image href="assets/khaleej-vision-logo.png" x="0" y="0" width="1254" height="1254"
-                   filter="url(#${goldFilter})" />
-          </svg>
-
-          <!-- Original KHALEEJ wordmark crop -->
-          <svg x="202" y="31" width="251" height="75" viewBox="80 760 620 185" overflow="hidden">
-            <image href="assets/khaleej-vision-logo.png" x="0" y="0" width="1254" height="1254"
-                   filter="url(#${goldFilter})" />
-          </svg>
-
-          <!-- Original VISION wordmark crop -->
-          <svg x="460" y="31" width="203" height="75" viewBox="680 760 500 185" overflow="hidden">
-            <image href="assets/khaleej-vision-logo.png" x="0" y="0" width="1254" height="1254"
-                   filter="url(#${ivoryFilter})" />
-          </svg>
-
-          <text x="205" y="130" fill="rgba(247,244,237,.72)"
-                font-family="Segoe UI, Arial, sans-serif" font-size="13.5" letter-spacing="2.1">
-            LAND SURVEYING &amp; ENGINEERING CONSULTANCY
-          </text>
-        </svg>`;
-
-      target.classList.add('kv-cropped-original-logo');
+        <img class="kv-brand-logo"
+             src="assets/khaleej-vision-option3-selected-dark.svg"
+             alt="Khaleej Vision — Land Surveying & Engineering Consultancy">`;
+      target.classList.add('kv-selected-logo-lockup');
     });
 
-    if (!document.getElementById('kv-original-logo-styles')) {
+    if (!document.getElementById('kv-selected-logo-styles')) {
       const style = document.createElement('style');
-      style.id = 'kv-original-logo-styles';
+      style.id = 'kv-selected-logo-styles';
       style.textContent = `
-        .kv-cropped-original-logo {
-          display:inline-flex !important;
-          align-items:center;
-          width:auto !important;
-          min-width:0;
+        .kv-selected-logo-lockup {
+          display: inline-flex !important;
+          align-items: center;
+          width: auto !important;
+          min-width: 0;
         }
-        .kv-original-lockup {
-          display:block;
-          width:330px;
-          max-width:35vw;
-          height:auto;
-          overflow:visible;
+
+        .kv-brand-logo {
+          display: block;
+          width: 330px;
+          max-width: 36vw;
+          height: auto;
         }
-        .kv-original-lockup-footer {
-          width:300px;
-          max-width:100%;
+
+        .footer-lockup .kv-brand-logo {
+          width: 300px;
+          max-width: 100%;
         }
-        @media (max-width:1180px) {
-          .kv-original-lockup { width:292px; max-width:32vw; }
+
+        @media (max-width: 1180px) {
+          .kv-brand-logo {
+            width: 292px;
+            max-width: 33vw;
+          }
         }
-        @media (max-width:980px) {
-          .kv-original-lockup { width:270px; max-width:55vw; }
+
+        @media (max-width: 980px) {
+          .kv-brand-logo {
+            width: 270px;
+            max-width: 55vw;
+          }
         }
-        @media (max-width:620px) {
-          .kv-original-lockup { width:230px; max-width:65vw; }
-          .kv-original-lockup-footer { width:250px; max-width:100%; }
+
+        @media (max-width: 620px) {
+          .kv-brand-logo {
+            width: 230px;
+            max-width: 68vw;
+          }
+          .footer-lockup .kv-brand-logo {
+            width: 250px;
+            max-width: 100%;
+          }
         }
       `;
       document.head.appendChild(style);
