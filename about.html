@@ -2,12 +2,35 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Khaleej Vision, an Oman-based surveying and engineering consultancy and part of Pearl Island LLC.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="About Khaleej Vision, an Oman-based surveying and engineering consultancy and part of Pearl Island LLC."
+  >
+
   <title>About | Khaleej Vision</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main site CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- About page CSS -->
+  <link rel="stylesheet" href="about-page.css">
 </head>
-<body>
+<body class="about-page">
   <div class="page-noise" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container nav-wrap">
@@ -37,35 +60,270 @@
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container page-hero-inner">
-        <div class="eyebrow" data-en="ABOUT KHALEEJ VISION" data-ar="عن خليج فيجن">ABOUT KHALEEJ VISION</div>
-        <h1 data-en="A Clearer View of Every Project" data-ar="رؤية أوضح لكل مشروع">A Clearer View of Every Project</h1>
-        <p data-en="A focused surveying and engineering consultancy in Oman, built around accuracy, clarity and reliable technical support." data-ar="شركة متخصصة في أعمال المساحة والاستشارات الهندسية في سلطنة عُمان، ترتكز على الدقة والوضوح والدعم الفني الموثوق.">A focused surveying and engineering consultancy in Oman, built around accuracy, clarity and reliable technical support.</p>
-        <span class="hero-line"></span>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container split-layout">
-        <div class="section-copy">
-          <div class="eyebrow dark" data-en="WHO WE ARE" data-ar="من نحن">WHO WE ARE</div>
-          <h2 data-en="Precision With Purpose" data-ar="دقة لها هدف">Precision With Purpose</h2>
-          <p data-en="Khaleej Vision is an Oman-based surveying and engineering consultancy and part of Pearl Island LLC. Established in 2026, the company provides precise survey information and practical technical support to help clients plan, design and execute projects with confidence." data-ar="خليج فيجن شركة متخصصة في أعمال المساحة والاستشارات الهندسية في سلطنة عُمان، وهي جزء من شركة Pearl Island LLC. تأسست في عام 2026 لتقديم بيانات مساحية دقيقة ودعم فني عملي يساعد العملاء على التخطيط والتصميم وتنفيذ المشاريع بثقة.">Khaleej Vision is an Oman-based surveying and engineering consultancy and part of Pearl Island LLC. Established in 2026, the company provides precise survey information and practical technical support to help clients plan, design and execute projects with confidence.</p>
-          <p data-en="Our approach is straightforward: understand the requirement, define the right survey scope, produce dependable information and support better project decisions." data-ar="منهجيتنا واضحة: فهم المتطلبات، تحديد نطاق المسح المناسب، تقديم معلومات موثوقة، ودعم اتخاذ قرارات أفضل للمشروع.">Our approach is straightforward: understand the requirement, define the right survey scope, produce dependable information and support better project decisions.</p>
-          <div class="mini-specs"><div><small data-en="Established" data-ar="تأسست">Established</small><strong>2026</strong></div><div><small data-en="Based in" data-ar="المقر">Based in</small><strong data-en="Oman" data-ar="سلطنة عُمان">Oman</strong></div><div><small data-en="Primary Focus" data-ar="المجال الرئيسي">Primary Focus</small><strong data-en="Land Surveying" data-ar="المساحة الأرضية">Land Surveying</strong></div></div>
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="about-hero-media">
+      <img
+        src="assets/about-hero.png"
+        alt="Mountainous coastal landscape in Oman at sunset"
+      >
+    </div>
+
+    <div class="about-hero-overlay"></div>
+
+    <div class="container about-hero-inner">
+      <div class="about-hero-copy">
+
+        <div
+          class="eyebrow"
+          data-en="ABOUT KHALEEJ VISION"
+          data-ar="عن خليج فيجن"
+        >
+          ABOUT KHALEEJ VISION
         </div>
-        <div class="about-art" aria-hidden="true"><div class="map-grid"></div><div class="contour contour-1"></div><div class="contour contour-2"></div><div class="contour contour-3"></div><div class="map-marker"><span></span></div><div class="art-label">KHALEEJ VISION / OMAN / 2026</div></div>
-      </div>
-    </section>
 
-    <section class="pearl-section">
-      <div class="container pearl-box">
-        <div><div class="eyebrow dark" data-en="PART OF PEARL ISLAND LLC" data-ar="جزء من PEARL ISLAND LLC">PART OF PEARL ISLAND LLC</div><h2 data-en="Focused Expertise. Broader Support." data-ar="خبرة متخصصة. دعم أوسع.">Focused Expertise. Broader Support.</h2></div>
-        <p data-en="Khaleej Vision operates as part of Pearl Island LLC, combining focused surveying and engineering expertise with the broader support of the Pearl Island group." data-ar="تعمل خليج فيجن كجزء من شركة Pearl Island LLC، لتجمع بين الخبرة المتخصصة في أعمال المساحة والهندسة والدعم الأوسع ضمن مجموعة Pearl Island.">Khaleej Vision operates as part of Pearl Island LLC, combining focused surveying and engineering expertise with the broader support of the Pearl Island group.</p>
+        <h1
+          data-en="A Clearer View<br>for a Stronger<br>Tomorrow<span class='gold-dot'>.</span>"
+          data-ar="رؤية أوضح<br>لمستقبل<br>أقوى<span class='gold-dot'>.</span>"
+        >
+          A Clearer View<br>
+          for a Stronger<br>
+          Tomorrow<span class="gold-dot">.</span>
+        </h1>
+
+        <p
+          data-en="Khaleej Vision provides professional land surveying and engineering consultancy services in Oman, combining accurate information, practical expertise and dependable project support."
+          data-ar="تقدم خليج فيجن خدمات احترافية في المساحة الأرضية والاستشارات الهندسية في سلطنة عُمان، مع الجمع بين المعلومات الدقيقة والخبرة العملية والدعم الموثوق للمشاريع."
+        >
+          Khaleej Vision provides professional land surveying and engineering consultancy services in Oman, combining accurate information, practical expertise and dependable project support.
+        </p>
+
       </div>
-    </section>
-  </main>
+
+      <div class="about-hero-side-note" aria-hidden="true">
+        <span>OMAN</span>
+        <span>2026</span>
+        <span>LAND SURVEYING</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WHO WE ARE -->
+  <section class="about-who">
+    <div class="container about-who-grid">
+
+      <!-- LEFT COPY -->
+      <div class="about-who-copy">
+
+        <div
+          class="eyebrow dark"
+          data-en="WHO WE ARE"
+          data-ar="من نحن"
+        >
+          WHO WE ARE
+        </div>
+
+        <h2
+          data-en="Built on Expertise.<br>Driven by Purpose."
+          data-ar="مبنية على الخبرة.<br>ومدفوعة بالهدف."
+        >
+          Built on Expertise.<br>
+          Driven by Purpose.
+        </h2>
+
+        <p
+          data-en="Khaleej Vision is an Oman-based land surveying and engineering consultancy established in 2026. Our primary focus is providing professional survey consultancy, topographical and engineering surveying services supported by practical engineering expertise."
+          data-ar="خليج فيجن شركة متخصصة في المساحة الأرضية والاستشارات الهندسية في سلطنة عُمان، تأسست في عام 2026. يتركز عملنا الأساسي على الاستشارات المساحية والرفع الطبوغرافي والمسح الهندسي، مدعومة بخبرة هندسية عملية."
+        >
+          Khaleej Vision is an Oman-based land surveying and engineering consultancy established in 2026. Our primary focus is providing professional survey consultancy, topographical and engineering surveying services supported by practical engineering expertise.
+        </p>
+
+        <p
+          data-en="As part of PEARL ISLAND LLC, Khaleej Vision combines focused surveying capability with access to broader business and project support."
+          data-ar="وباعتبارها جزءاً من PEARL ISLAND LLC، تجمع خليج فيجن بين الخبرة المتخصصة في أعمال المساحة والدعم الأوسع للأعمال والمشاريع."
+        >
+          As part of PEARL ISLAND LLC, Khaleej Vision combines focused surveying capability with access to broader business and project support.
+        </p>
+
+        <div class="about-specs">
+
+          <div class="about-spec">
+            <span>01</span>
+            <small data-en="ESTABLISHED" data-ar="تأسست">ESTABLISHED</small>
+            <strong>2026</strong>
+          </div>
+
+          <div class="about-spec">
+            <span>02</span>
+            <small data-en="BASED IN" data-ar="المقر">BASED IN</small>
+            <strong data-en="OMAN" data-ar="سلطنة عُمان">OMAN</strong>
+          </div>
+
+          <div class="about-spec">
+            <span>03</span>
+            <small data-en="PRIMARY FOCUS" data-ar="المجال الرئيسي">PRIMARY FOCUS</small>
+            <strong data-en="LAND SURVEYING" data-ar="المساحة الأرضية">LAND SURVEYING</strong>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- MIDDLE IMAGE -->
+      <div class="about-who-image">
+        <img
+          src="assets/about-surveyor.png"
+          alt="Land surveyor working in mountainous terrain in Oman"
+        >
+      </div>
+
+
+      <!-- RIGHT PANEL -->
+      <aside class="about-values-panel">
+
+        <div class="about-value-item">
+          <div class="about-value-number">01</div>
+
+          <div>
+            <h3 data-en="OUR VISION" data-ar="رؤيتنا">
+              OUR VISION
+            </h3>
+
+            <p
+              data-en="To establish Khaleej Vision as a trusted provider of surveying and engineering consultancy services in Oman."
+              data-ar="أن تصبح خليج فيجن جهة موثوقة في خدمات المساحة والاستشارات الهندسية في سلطنة عُمان."
+            >
+              To establish Khaleej Vision as a trusted provider of surveying and engineering consultancy services in Oman.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="about-value-item">
+          <div class="about-value-number">02</div>
+
+          <div>
+            <h3 data-en="OUR MISSION" data-ar="مهمتنا">
+              OUR MISSION
+            </h3>
+
+            <p
+              data-en="To provide accurate surveying information and practical engineering support that helps clients plan and execute projects with confidence."
+              data-ar="تقديم معلومات مساحية دقيقة ودعم هندسي عملي يساعد العملاء على التخطيط وتنفيذ المشاريع بثقة."
+            >
+              To provide accurate surveying information and practical engineering support that helps clients plan and execute projects with confidence.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="about-value-item">
+          <div class="about-value-number">03</div>
+
+          <div>
+            <h3 data-en="OUR VALUES" data-ar="قيمنا">
+              OUR VALUES
+            </h3>
+
+            <div class="about-values-list">
+              <span data-en="Precision" data-ar="الدقة">Precision</span>
+              <span data-en="Reliability" data-ar="الموثوقية">Reliability</span>
+              <span data-en="Practicality" data-ar="العملية">Practicality</span>
+              <span data-en="Professionalism" data-ar="الاحترافية">Professionalism</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- OUR STORY -->
+  <section class="about-story">
+    <div class="container about-story-grid">
+
+      <div class="about-story-copy">
+
+        <div
+          class="eyebrow dark"
+          data-en="OUR STORY"
+          data-ar="قصتنا"
+        >
+          OUR STORY
+        </div>
+
+        <h2
+          data-en="Rooted in Oman.<br>Focused on What's Next."
+          data-ar="جذورنا في عُمان.<br>ونظرتنا نحو المستقبل."
+        >
+          Rooted in Oman.<br>
+          Focused on What's Next.
+        </h2>
+
+        <p
+          data-en="Established in 2026, Khaleej Vision was created with a clear focus: provide professional surveying expertise supported by practical engineering knowledge."
+          data-ar="تأسست خليج فيجن في عام 2026 برؤية واضحة تتمثل في تقديم خبرة احترافية في أعمال المساحة مدعومة بمعرفة هندسية عملية."
+        >
+          Established in 2026, Khaleej Vision was created with a clear focus: provide professional surveying expertise supported by practical engineering knowledge.
+        </p>
+
+        <p
+          data-en="From established communities and complex terrain to growing urban and infrastructure projects, our role is to help clients understand the land clearly and make better-informed project decisions."
+          data-ar="من المجتمعات القائمة والتضاريس المعقدة إلى المشاريع الحضرية والبنية الأساسية المتنامية، يتمثل دورنا في مساعدة العملاء على فهم الأرض بوضوح واتخاذ قرارات أفضل للمشاريع."
+        >
+          From established communities and complex terrain to growing urban and infrastructure projects, our role is to help clients understand the land clearly and make better-informed project decisions.
+        </p>
+
+        <div class="about-parent-company">
+          <span></span>
+          <strong
+            data-en="PART OF PEARL ISLAND LLC"
+            data-ar="جزء من PEARL ISLAND LLC"
+          >
+            PART OF PEARL ISLAND LLC
+          </strong>
+        </div>
+
+      </div>
+
+
+      <div class="about-story-images">
+
+        <figure class="about-story-card">
+          <img
+            src="assets/about-heritage.png"
+            alt="Historic Omani fort overlooking mountainous coastal terrain"
+          >
+
+          <figcaption>
+            <span data-en="UNDERSTANDING TODAY." data-ar="فهم الحاضر.">
+              UNDERSTANDING TODAY.
+            </span>
+          </figcaption>
+        </figure>
+
+
+        <figure class="about-story-card">
+          <img
+            src="assets/about-modern-oman.png"
+            alt="Modern coastal development in Oman at twilight"
+          >
+
+          <figcaption>
+            <span data-en="SUPPORTING TOMORROW." data-ar="دعم المستقبل.">
+              SUPPORTING TOMORROW.
+            </span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+</main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
