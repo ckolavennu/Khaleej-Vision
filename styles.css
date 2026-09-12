@@ -12,18 +12,58 @@
   --line:rgba(199,154,59,.28);
   --container:1500px;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--ivory);color:var(--charcoal);font-family:"Segoe UI",Arial,Helvetica,sans-serif;line-height:1.65;overflow-x:hidden}
-body.rtl{font-family:Tahoma,"Segoe UI",Arial,sans-serif;text-align:right}
+*{
+    box-sizing:border-box
+}
+
+html {
+    scroll-behavior:smooth
+}
+
+body {
+    margin:0;
+    background:var(--ivory);
+    color:var(--charcoal);
+    font-family:"Segoe UI",Arial,Helvetica,sans-serif;line-height:1.65;
+    overflow-x:hidden
+}
+
+body.rtl {
+    font-family:Tahoma,"Segoe UI",Arial,sans-serif;text-align:right
+}
 a{text-decoration:none;color:inherit}
 img,svg{display:block;max-width:100%}
 button,input,select,textarea{font:inherit}
 button{cursor:pointer}
 .container{width:min(var(--container),calc(100% - 64px));margin:0 auto}
 .page-noise{position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.02;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
-.site-header{position:absolute;top:0;left:0;right:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.14);transition:background .25s ease,backdrop-filter .25s ease}
-.site-header.scrolled{position:fixed;background:rgba(7,17,28,.94);backdrop-filter:blur(14px)}
+.site-header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:50;
+
+    background:transparent;
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    transition:
+        background .25s ease,
+        backdrop-filter .25s ease,
+        border-color .25s ease;
+    }
+
+.site-header.scrolled {
+    position:fixed;
+
+    background:rgba(7,17,28,.78);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
 .nav-wrap{height:108px;display:flex;align-items:center;gap:28px}
 .brand-lockup{display:inline-flex;align-items:center;gap:14px;color:var(--gold-light);min-width:345px}
 .brand-mark{width:58px;height:58px;flex:0 0 auto}

@@ -1,23 +1,47 @@
 /* Khaleej Vision homepage hero — photographic mockup direction */
 
 .home-page .site-header{
-  background:#07111c;
-  border-bottom:1px solid rgba(255,255,255,.12);
+  background:rgba(10,18,26,.58);
+
+  backdrop-filter:blur(16px) saturate(120%);
+  -webkit-backdrop-filter:blur(16px) saturate(120%);
+
+  border-bottom:1px solid rgba(255,255,255,.10);
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.10);
+
+  transition:
+    background .25s ease,
+    backdrop-filter .25s ease,
+    box-shadow .25s ease;
+}
+
+.home-page .site-header.scrolled{
+  background:rgba(7,17,28,.88);
+
+  backdrop-filter:blur(20px) saturate(125%);
+  -webkit-backdrop-filter:blur(20px) saturate(125%);
+
+  border-bottom:1px solid rgba(255,255,255,.09);
+
+  box-shadow:
+    0 10px 32px rgba(0,0,0,.20);
 }
 
 .home-page .nav-wrap{
-  height:126px;
+  height:112px;
 }
 
 .home-page .kv-brand-logo{
-  width:430px !important;
-  max-width:34vw !important;
+  width:400px !important;
+  max-width:33vw !important;
   height:auto !important;
 }
 
 .home-page .brand-lockup,
 .home-page .kv-selected-logo-lockup{
-  min-width:430px !important;
+  min-width:400px !important;
 }
 
 .home-page .desktop-nav{
@@ -35,8 +59,8 @@
   overflow:hidden;
   color:#fff;
   background:
-    radial-gradient(circle at 55% 38%,rgba(36,72,96,.18),transparent 32%),
-    linear-gradient(90deg,#07111c 0%,#07111c 34%,#0a1622 46%,#0b1825 100%);
+    radial-gradient(circle at 72% 32%,rgba(36,72,96,.16),transparent 34%),
+    linear-gradient(90deg,#07111c 0%,#08131f 36%,#0a1622 58%,#0b1825 100%);
 }
 
 .home-photo-hero::before{
@@ -56,10 +80,7 @@
 .home-hero-photo{
   position:absolute;
   z-index:1;
-  top:126px;
-  right:0;
-  bottom:0;
-  left:39%;
+  inset:0;
   overflow:hidden;
   background:#0a1622;
 }
@@ -68,9 +89,9 @@
   width:100%;
   height:100%;
   object-fit:cover;
-  object-position:center center;
+  object-position:72% center;
   display:block;
-  filter:saturate(.96) contrast(1.03) brightness(.97);
+  filter:saturate(.96) contrast(1.04) brightness(.92);
 }
 
 .home-hero-photo::after{
@@ -79,8 +100,22 @@
   inset:0;
   pointer-events:none;
   background:
-    linear-gradient(90deg,#07111c 0%,rgba(7,17,28,.93) 5%,rgba(7,17,28,.55) 18%,rgba(7,17,28,.16) 38%,rgba(7,17,28,0) 60%),
-    linear-gradient(0deg,rgba(4,10,17,.12),rgba(4,10,17,.02) 58%,rgba(4,10,17,.14));
+    linear-gradient(
+      90deg,
+      rgba(5,14,23,.99) 0%,
+      rgba(5,14,23,.97) 16%,
+      rgba(5,14,23,.91) 30%,
+      rgba(5,14,23,.72) 42%,
+      rgba(5,14,23,.44) 54%,
+      rgba(5,14,23,.18) 68%,
+      rgba(5,14,23,.05) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5,14,23,.34) 0%,
+      rgba(5,14,23,.08) 56%,
+      rgba(5,14,23,.14) 100%
+    );
 }
 
 .home-hero-inner{
@@ -89,7 +124,7 @@
   min-height:max(820px,100vh);
   display:flex;
   align-items:center;
-  padding-top:168px;
+  padding-top:185px;
   padding-bottom:110px;
 }
 
@@ -102,10 +137,10 @@
   margin:0;
   color:#fff;
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(58px,5.35vw,92px);
+  font-size:clamp(54px,4.9vw,84px);
   font-weight:600;
-  line-height:.94;
-  letter-spacing:-.035em;
+  line-height:.95;
+  letter-spacing:-.03em;
 }
 
 .home-hero-title .gold-dot{
@@ -176,14 +211,23 @@ body.rtl .home-hero-title{
 }
 
 body.rtl .home-hero-photo{
-  right:39%;
-  left:0;
+  inset:0;
 }
-
 body.rtl .home-hero-photo::after{
   background:
-    linear-gradient(270deg,#07111c 0%,rgba(7,17,28,.93) 5%,rgba(7,17,28,.55) 18%,rgba(7,17,28,.16) 38%,rgba(7,17,28,0) 60%),
-    linear-gradient(0deg,rgba(4,10,17,.12),rgba(4,10,17,.02) 58%,rgba(4,10,17,.14));
+    linear-gradient(
+      270deg,
+      rgba(5,14,23,.97) 0%,
+      rgba(5,14,23,.92) 34%,
+      rgba(5,14,23,.62) 62%,
+      rgba(5,14,23,.28) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5,14,23,.54),
+      rgba(5,14,23,.10) 58%,
+      rgba(5,14,23,.20)
+    );
 }
 
 body.rtl .home-hero-motto{
@@ -212,13 +256,24 @@ body.rtl .home-hero-motto{
   .home-page .kv-brand-logo{width:270px !important;max-width:58vw !important}
   .home-page .brand-lockup,.home-page .kv-selected-logo-lockup{min-width:0 !important}
   .home-photo-hero{min-height:880px}
-  .home-hero-photo{inset:92px 0 0 0}
-  body.rtl .home-hero-photo{inset:92px 0 0 0}
+  .home-hero-photo{inset:0}
+  body.rtl .home-hero-photo{inset:0}
   .home-hero-photo::after,
   body.rtl .home-hero-photo::after{
     background:
-      linear-gradient(90deg,rgba(7,17,28,.97) 0%,rgba(7,17,28,.90) 40%,rgba(7,17,28,.50) 72%,rgba(7,17,28,.28) 100%),
-      linear-gradient(0deg,rgba(4,10,17,.58),rgba(4,10,17,.06) 58%,rgba(4,10,17,.20));
+      linear-gradient(
+        90deg,
+        rgba(5,14,23,.97) 0%,
+        rgba(5,14,23,.92) 34%,
+        rgba(5,14,23,.62) 62%,
+        rgba(5,14,23,.28) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(5,14,23,.54),
+        rgba(5,14,23,.10) 58%,
+        rgba(5,14,23,.20)
+      );
   }
   body.rtl .home-hero-photo::after{
     background:
@@ -234,8 +289,8 @@ body.rtl .home-hero-motto{
   .home-page .nav-wrap{height:78px}
   .home-page .kv-brand-logo{width:220px !important;max-width:68vw !important}
   .home-photo-hero{min-height:820px}
-  .home-hero-photo{top:78px}
-  .home-hero-photo img{object-position:61% center}
+  .home-hero-photo{inset:0}
+  .home-hero-photo img{object-position:76% center}
   .home-hero-inner{min-height:820px;padding-top:118px;padding-bottom:110px}
   .home-hero-copy{width:100%;max-width:100%}
   .home-hero-title{font-size:48px}
