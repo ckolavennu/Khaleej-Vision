@@ -591,6 +591,467 @@
     background:var(--gold);
 }
 
+/* =========================================================
+   LEADERSHIP
+   ========================================================= */
+
+.about-leadership{
+    position:relative;
+
+    padding:
+        105px
+        0;
+
+    overflow:hidden;
+
+    background:#081521;
+
+    color:#fff;
+}
+
+
+/* subtle background glow */
+.about-leadership::before{
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    right:-220px;
+    top:-240px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(221,187,106,.10),
+            transparent 68%
+        );
+
+    pointer-events:none;
+}
+
+
+.about-leadership-grid{
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+        .82fr
+        1.18fr;
+
+    gap:90px;
+
+    align-items:center;
+}
+
+
+/* =========================================================
+   PORTRAIT
+   ========================================================= */
+
+.leadership-photo{
+    position:relative;
+
+    max-width:500px;
+
+    overflow:hidden;
+
+    background:#101D29;
+}
+
+
+.leadership-photo img{
+    width:100%;
+
+    aspect-ratio:
+        4 / 5;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+    display:block;
+}
+
+
+.leadership-photo::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    pointer-events:none;
+
+    box-shadow:
+        inset 0 0 70px
+        rgba(4,10,17,.20);
+}
+
+
+.leadership-photo-tag{
+    position:absolute;
+
+    z-index:3;
+
+    left:22px;
+    right:22px;
+    bottom:20px;
+
+    display:flex;
+    justify-content:space-between;
+
+    gap:20px;
+
+    color:
+        rgba(255,255,255,.68);
+
+    font-size:8px;
+
+    letter-spacing:.19em;
+
+    text-transform:uppercase;
+}
+
+
+/* =========================================================
+   LEADERSHIP COPY
+   ========================================================= */
+
+.leadership-copy{
+    max-width:680px;
+}
+
+
+.about-leadership .eyebrow{
+    margin-bottom:22px;
+
+    color:var(--gold-light);
+}
+
+
+.leadership-copy h2{
+    margin:
+        0
+        0
+        38px;
+
+    color:#fff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            44px,
+            3.8vw,
+            64px
+        );
+
+    font-weight:600;
+
+    line-height:.98;
+
+    letter-spacing:-.025em;
+}
+
+
+/* name and role */
+
+.leadership-name-block{
+    padding:
+        0
+        0
+        24px;
+
+    margin-bottom:26px;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+
+.leadership-name-block h3{
+    margin:
+        0
+        0
+        6px;
+
+    color:#fff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:30px;
+
+    font-weight:600;
+}
+
+
+.leadership-name-block span{
+    color:var(--gold-light);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:.15em;
+
+    text-transform:uppercase;
+}
+
+
+.leadership-copy > p{
+    max-width:620px;
+
+    margin:
+        0
+        0
+        36px;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size:15px;
+
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   QUALIFICATION DETAILS
+   ========================================================= */
+
+.leadership-details{
+    display:grid;
+
+    grid-template-columns:
+        1.55fr
+        .7fr
+        .55fr;
+
+    gap:0;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.12);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+
+.leadership-details > div{
+    min-height:105px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:
+        20px
+        24px;
+
+    border-right:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+
+.leadership-details > div:first-child{
+    padding-left:0;
+}
+
+
+.leadership-details > div:last-child{
+    border-right:0;
+}
+
+
+.leadership-details small{
+    margin-bottom:9px;
+
+    color:var(--gold-light);
+
+    font-size:8px;
+
+    font-weight:700;
+
+    letter-spacing:.18em;
+}
+
+
+.leadership-details strong{
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    line-height:1.5;
+}
+
+
+/* =========================================================
+   SIGNATURE LINE
+   ========================================================= */
+
+.leadership-signature{
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:30px;
+}
+
+
+.leadership-signature > span{
+    width:38px;
+    height:1px;
+
+    background:var(--gold);
+}
+
+
+.leadership-signature small{
+    color:
+        rgba(255,255,255,.42);
+
+    font-size:8px;
+
+    letter-spacing:.19em;
+}
+
+
+/* =========================================================
+   LEADERSHIP RTL
+   ========================================================= */
+
+body.rtl
+.about-leadership-grid{
+    direction:rtl;
+}
+
+
+body.rtl
+.leadership-details > div{
+    border-right:0;
+
+    border-left:
+        1px solid
+        rgba(255,255,255,.12);
+}
+
+
+body.rtl
+.leadership-details > div:first-child{
+    padding-left:24px;
+    padding-right:0;
+}
+
+
+body.rtl
+.leadership-details > div:last-child{
+    border-left:0;
+}
+
+
+/* =========================================================
+   LEADERSHIP RESPONSIVE
+   ========================================================= */
+
+@media(max-width:980px){
+
+    .about-leadership{
+        padding:
+            85px
+            0;
+    }
+
+
+    .about-leadership-grid{
+        grid-template-columns:
+            .78fr
+            1.22fr;
+
+        gap:50px;
+    }
+
+
+    .leadership-copy h2{
+        font-size:48px;
+    }
+
+
+    .leadership-details{
+        grid-template-columns:1fr;
+    }
+
+
+    .leadership-details > div{
+        min-height:auto;
+
+        padding:
+            18px
+            0;
+
+        border-right:0;
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,.12);
+    }
+
+
+    .leadership-details > div:last-child{
+        border-bottom:0;
+    }
+
+}
+
+
+@media(max-width:720px){
+
+    .about-leadership-grid{
+        grid-template-columns:1fr;
+
+        gap:48px;
+    }
+
+
+    .leadership-photo{
+        width:min(
+            100%,
+            430px
+        );
+
+        margin:
+            0
+            auto;
+    }
+
+
+    .leadership-copy h2{
+        font-size:40px;
+    }
+
+}
+
 
 /* =========================================================
    OUR STORY
