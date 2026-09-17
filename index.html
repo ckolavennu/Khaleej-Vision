@@ -1,143 +1,526 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khaleej Vision — Land Surveying & Engineering Consultancy in Oman. Part of Pearl Island LLC.">
-  <title>Khaleej Vision | Land Surveying & Engineering Consultancy</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="hero-photo.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Khaleej Vision — Land Surveying & Engineering Consultancy in Oman. Part of Pearl Island LLC."
+  >
+
+  <title>
+    Khaleej Vision | Land Surveying & Engineering Consultancy
+  </title>
+
+
+  <!--
+    Prevent the opening animation from flashing again
+    if this browser tab/session has already seen it.
+
+    ?intro=1 overrides this while developing.
+  -->
+
+  <script>
+    try {
+      const introParams =
+        new URLSearchParams(window.location.search);
+
+      const forceIntro =
+        introParams.get("intro") === "1";
+
+      const introSeen =
+        sessionStorage.getItem("khaleejVisionIntroSeen") === "true";
+
+      if (introSeen && !forceIntro) {
+        document.documentElement.classList.add("kv-intro-skip");
+      }
+    } catch (error) {
+      /* If sessionStorage is unavailable, simply show the intro. */
+    }
+  </script>
+
+
+  <!-- Opening image preload -->
+
+  <link
+    rel="preload"
+    href="assets/muttrah-night.webp"
+    as="image"
+    type="image/webp"
+  >
+
+
+  <!-- Main site styles -->
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+
+
+  <!-- Homepage styles -->
+
+  <link
+    rel="stylesheet"
+    href="hero-photo.css"
+  >
+
 </head>
+
+
+
 <body class="home-page">
-  <div class="page-noise" aria-hidden="true"></div>
+
+
+  <!-- ======================================================
+       OPENING OMAN INTRO
+       ====================================================== -->
+
+  <div
+    class="kv-intro"
+    id="kvIntro"
+    aria-hidden="true"
+  >
+
+
+    <!-- Background photograph -->
+
+    <div class="kv-intro-media">
+
+      <img
+        src="assets/muttrah-night.webp"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+      >
+
+    </div>
+
+
+    <!-- Cinematic dark treatment -->
+
+    <div class="kv-intro-shade"></div>
+
+
+    <!-- Fine technical lines -->
+
+    <div
+      class="kv-intro-grid"
+      aria-hidden="true"
+    ></div>
+
+
+    <!-- Arabic title -->
+
+    <div class="kv-intro-content">
+
+      <div
+        class="kv-intro-arabic"
+        lang="ar"
+        dir="rtl"
+      >
+
+        <h1>
+          عُمان
+        </h1>
+
+        <p>
+          أرض الفرص
+        </p>
+
+        <span class="kv-intro-line"></span>
+
+      </div>
+
+    </div>
+
+
+    <!-- Small company signature -->
+
+    <div class="kv-intro-brand">
+
+      <span class="kv-intro-brand-line"></span>
+
+      <span>
+        KHALEEJ VISION · OMAN
+      </span>
+
+      <span class="kv-intro-brand-line"></span>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ======================================================
+       GLOBAL PAGE NOISE
+       ====================================================== -->
+
+  <div
+    class="page-noise"
+    aria-hidden="true"
+  ></div>
+
+
+
+  <!-- ======================================================
+       HEADER
+       ====================================================== -->
 
   <header class="site-header">
+
     <div class="container nav-wrap">
-      <a class="brand-lockup" href="index.html" aria-label="Khaleej Vision home">
-        <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true"><ellipse cx="60" cy="60" rx="44" ry="25" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="60" cy="60" r="15" fill="none" stroke="currentColor" stroke-width="5"/><line x1="60" y1="8" x2="60" y2="112" stroke="currentColor" stroke-width="3"/><line x1="8" y1="60" x2="112" y2="60" stroke="currentColor" stroke-width="3"/><path d="M32 76 C48 66,72 66,88 76" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
-        <span class="brand-text"><strong>KHALEEJ VISION</strong><small>LAND SURVEYING &amp; ENGINEERING CONSULTANCY</small></span>
+
+
+      <!-- Logo -->
+
+      <a
+        class="brand-lockup"
+        href="index.html"
+        aria-label="Khaleej Vision home"
+      >
+
+        <svg
+          class="brand-mark"
+          viewBox="0 0 120 120"
+          aria-hidden="true"
+        >
+
+          <ellipse
+            cx="60"
+            cy="60"
+            rx="44"
+            ry="25"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="5"
+          />
+
+          <circle
+            cx="60"
+            cy="60"
+            r="15"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="5"
+          />
+
+          <line
+            x1="60"
+            y1="8"
+            x2="60"
+            y2="112"
+            stroke="currentColor"
+            stroke-width="3"
+          />
+
+          <line
+            x1="8"
+            y1="60"
+            x2="112"
+            y2="60"
+            stroke="currentColor"
+            stroke-width="3"
+          />
+
+          <path
+            d="M32 76 C48 66,72 66,88 76"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+
+        </svg>
+
+
+        <span class="brand-text">
+
+          <strong>
+            KHALEEJ VISION
+          </strong>
+
+          <small>
+            LAND SURVEYING &amp; ENGINEERING CONSULTANCY
+          </small>
+
+        </span>
+
       </a>
 
 
-  <nav class="desktop-nav" aria-label="Primary navigation">
 
-    <a href="index.html"
-      aria-current="page"
-      data-en="Home"
-      data-ar="الرئيسية">
-      Home
-    </a>
+      <!-- Desktop navigation -->
 
-    <a href="about.html"
-      data-en="About"
-      data-ar="من نحن">
-      About
-    </a>
+      <nav
+        class="desktop-nav"
+        aria-label="Primary navigation"
+      >
 
-    <a href="services.html"
-      data-en="Services"
-      data-ar="خدماتنا">
-      Services
-    </a>
+        <a
+          href="index.html"
+          aria-current="page"
+          data-en="Home"
+          data-ar="الرئيسية"
+        >
+          Home
+        </a>
 
-    <a href="team.html"
-      data-en="Team"
-      data-ar="فريقنا">
-      Team
-    </a>
 
-    <a href="contact.html"
-      data-en="Contact"
-      data-ar="تواصل معنا">
-      Contact
-    </a>
+        <a
+          href="about.html"
+          data-en="About"
+          data-ar="من نحن"
+        >
+          About
+        </a>
 
-  </nav>
+
+        <a
+          href="services.html"
+          data-en="Services"
+          data-ar="خدماتنا"
+        >
+          Services
+        </a>
+
+
+        <a
+          href="team.html"
+          data-en="Team"
+          data-ar="فريقنا"
+        >
+          Team
+        </a>
+
+
+        <a
+          href="contact.html"
+          data-en="Contact"
+          data-ar="تواصل معنا"
+        >
+          Contact
+        </a>
+
+      </nav>
+
+
+
+      <!-- Navigation actions -->
 
       <div class="nav-actions">
-        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
-        <a class="btn btn-gold btn-nav" href="contact.html" data-en="Request a Consultation" data-ar="اطلب استشارة">Request a Consultation</a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu"><span></span><span></span></button>
+
+        <button
+          class="lang-toggle"
+          id="langToggle"
+          type="button"
+          aria-label="Switch language"
+        >
+          العربية
+        </button>
+
+
+        <a
+          class="btn btn-gold btn-nav"
+          href="contact.html"
+          data-en="Request a Consultation"
+          data-ar="اطلب استشارة"
+        >
+          Request a Consultation
+        </a>
+
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open menu"
+        >
+
+          <span></span>
+          <span></span>
+
+        </button>
+
       </div>
+
     </div>
 
-    <div class="mobile-menu" id="mobileMenu">
 
-      <a href="index.html"
+
+    <!-- Mobile navigation -->
+
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+    >
+
+      <a
+        href="index.html"
+        aria-current="page"
         data-en="Home"
-        data-ar="الرئيسية">
+        data-ar="الرئيسية"
+      >
         Home
       </a>
 
-      <a href="about.html"
+
+      <a
+        href="about.html"
         data-en="About"
-        data-ar="من نحن">
+        data-ar="من نحن"
+      >
         About
       </a>
 
-      <a href="services.html"
+
+      <a
+        href="services.html"
         data-en="Services"
-        data-ar="خدماتنا">
+        data-ar="خدماتنا"
+      >
         Services
       </a>
 
-      <a href="team.html"
+
+      <a
+        href="team.html"
         data-en="Team"
-        data-ar="فريقنا">
+        data-ar="فريقنا"
+      >
         Team
       </a>
 
-      <a href="contact.html"
+
+      <a
+        href="contact.html"
         data-en="Contact"
-        data-ar="تواصل معنا">
+        data-ar="تواصل معنا"
+      >
         Contact
       </a>
 
-      <a class="btn btn-gold"
+
+      <a
+        class="btn btn-gold"
         href="contact.html"
         data-en="Request a Consultation"
-        data-ar="اطلب استشارة">
+        data-ar="اطلب استشارة"
+      >
         Request a Consultation
       </a>
 
     </div>
+
   </header>
 
+
+
+  <!-- ======================================================
+       MAIN
+       ====================================================== -->
+
   <main>
+
+
+    <!-- ====================================================
+         HOMEPAGE HERO
+         ==================================================== -->
+
     <section class="home-photo-hero">
-      <div class="home-hero-photo" aria-hidden="true">
-        <img id="homeHeroImage" 
-        src = "assets/hero-surveyor-oman.png"
-        alt="Surveyor in Oman with a theodolite, overlooking a construction site with buildings and mountains in the background.">
+
+
+      <!-- Hero photograph -->
+
+      <div
+        class="home-hero-photo"
+        aria-hidden="true"
+      >
+
+        <img
+          id="homeHeroImage"
+          src="assets/hero-surveyor-oman.png"
+          alt="Surveyor in Oman with a theodolite, overlooking a construction site with buildings and mountains in the background."
+        >
+
       </div>
 
+
+
+      <!-- Hero content -->
+
       <div class="container home-hero-inner">
+
         <div class="home-hero-copy">
+
           <h1
             class="home-hero-title"
             data-en="See the Land<br>Clearly<span class='gold-dot'>.</span><br>Build with<br>Confidence<span class='gold-dot'>.</span>"
             data-ar="رؤية أوضح<br>للأرض<span class='gold-dot'>.</span><br>وبناء<br>بثقة<span class='gold-dot'>.</span>"
           >
+
             See the Land<br>
+
             Clearly<span class="gold-dot">.</span><br>
+
             Build with<br>
+
             Confidence<span class="gold-dot">.</span>
+
           </h1>
+
 
           <p
             class="home-hero-lead"
             data-en="Professional survey consultancy and topographical & engineering surveying services, supported by practical engineering expertise."
             data-ar="خدمات احترافية للاستشارات المساحية والرفع الطبوغرافي والمسح الهندسي، مدعومة بخبرة هندسية عملية."
           >
-            Professional survey consultancy and topographical & engineering surveying services, supported by practical engineering expertise.
+
+            Professional survey consultancy and topographical
+            &amp; engineering surveying services, supported by
+            practical engineering expertise.
+
           </p>
 
+
           <div class="hero-actions">
-            <a class="btn btn-gold" href="contact.html" data-en="Request a Consultation" data-ar="اطلب استشارة">Request a Consultation</a>
-            <a class="btn btn-outline" href="services.html" data-en="Explore Our Services" data-ar="استكشف خدماتنا">Explore Our Services</a>
+
+            <a
+              class="btn btn-gold"
+              href="contact.html"
+              data-en="Request a Consultation"
+              data-ar="اطلب استشارة"
+            >
+              Request a Consultation
+            </a>
+
+
+            <a
+              class="btn btn-outline"
+              href="services.html"
+              data-en="Explore Our Services"
+              data-ar="استكشف خدماتنا"
+            >
+              Explore Our Services
+            </a>
+
           </div>
+
         </div>
+
       </div>
+
+
+
+      <!-- Hero motto -->
 
       <div
         class="home-hero-motto"
@@ -146,27 +529,372 @@
       >
         SURVEYING TODAY FOR A STRONGER TOMORROW
       </div>
+
     </section>
+
+
+
+    <!-- ====================================================
+         HOMEPAGE INTRO
+         ==================================================== -->
 
     <section class="section home-intro">
+
       <div class="container">
-        <div class="section-heading"><div class="eyebrow dark" data-en="KHALEEJ VISION" data-ar="خليج فيجن">KHALEEJ VISION</div><h2 data-en="Surveying First. Engineering Supported." data-ar="المساحة أولاً. بدعم هندسي.">Surveying First. Engineering Supported.</h2><p data-en="Khaleej Vision provides focused surveying and engineering support in Oman, with services built around accurate information, technical clarity and dependable project delivery." data-ar="تقدم خليج فيجن خدمات متخصصة في المساحة والدعم الهندسي في سلطنة عُمان، ترتكز على دقة المعلومات والوضوح الفني والاعتمادية في دعم المشاريع.">Khaleej Vision provides focused surveying and engineering support in Oman, with services built around accurate information, technical clarity and dependable project delivery.</p></div>
-        <div class="home-teasers"><a class="teaser" href="services.html"><span>01</span><h3 data-en="Survey Consultancy" data-ar="الاستشارات المساحية">Survey Consultancy</h3><p data-en="Clear technical guidance for survey scope and project requirements." data-ar="توجيه فني واضح لنطاق أعمال المسح ومتطلبات المشروع.">Clear technical guidance for survey scope and project requirements.</p></a><a class="teaser" href="services.html"><span>02</span><h3 data-en="Topographical & Engineering Survey" data-ar="الرفع الطبوغرافي والمسح الهندسي">Topographical & Engineering Survey</h3><p data-en="Accurate site and terrain information for planning, design and engineering." data-ar="معلومات دقيقة للموقع والتضاريس لدعم التخطيط والتصميم والهندسة.">Accurate site and terrain information for planning, design and engineering.</p></a><a class="teaser" href="services.html"><span>03</span><h3 data-en="Engineering Consultancy" data-ar="الاستشارات الهندسية">Engineering Consultancy</h3><p data-en="Practical engineering support for project planning and development." data-ar="دعم هندسي عملي لتخطيط المشاريع وتطويرها.">Practical engineering support for project planning and development.</p></a></div>
-        <a class="inline-link" href="about.html" data-en="Discover Khaleej Vision →" data-ar="تعرف على خليج فيجن ←">Discover Khaleej Vision →</a>
+
+
+        <div class="section-heading">
+
+
+          <div
+            class="eyebrow dark"
+            data-en="KHALEEJ VISION"
+            data-ar="خليج فيجن"
+          >
+            KHALEEJ VISION
+          </div>
+
+
+          <h2
+            data-en="Surveying First. Engineering Supported."
+            data-ar="المساحة أولاً. بدعم هندسي."
+          >
+            Surveying First. Engineering Supported.
+          </h2>
+
+
+          <p
+            data-en="Khaleej Vision provides focused surveying and engineering support in Oman, with services built around accurate information, technical clarity and dependable project delivery."
+            data-ar="تقدم خليج فيجن خدمات متخصصة في المساحة والدعم الهندسي في سلطنة عُمان، ترتكز على دقة المعلومات والوضوح الفني والاعتمادية في دعم المشاريع."
+          >
+            Khaleej Vision provides focused surveying and
+            engineering support in Oman, with services built
+            around accurate information, technical clarity and
+            dependable project delivery.
+          </p>
+
+        </div>
+
+
+
+        <!-- Service teasers -->
+
+        <div class="home-teasers">
+
+
+          <a
+            class="teaser"
+            href="services.html"
+          >
+
+            <span>
+              01
+            </span>
+
+            <h3
+              data-en="Survey Consultancy"
+              data-ar="الاستشارات المساحية"
+            >
+              Survey Consultancy
+            </h3>
+
+            <p
+              data-en="Clear technical guidance for survey scope and project requirements."
+              data-ar="توجيه فني واضح لنطاق أعمال المسح ومتطلبات المشروع."
+            >
+              Clear technical guidance for survey scope and
+              project requirements.
+            </p>
+
+          </a>
+
+
+
+          <a
+            class="teaser"
+            href="services.html"
+          >
+
+            <span>
+              02
+            </span>
+
+            <h3
+              data-en="Topographical & Engineering Survey"
+              data-ar="الرفع الطبوغرافي والمسح الهندسي"
+            >
+              Topographical &amp; Engineering Survey
+            </h3>
+
+            <p
+              data-en="Accurate site and terrain information for planning, design and engineering."
+              data-ar="معلومات دقيقة للموقع والتضاريس لدعم التخطيط والتصميم والهندسة."
+            >
+              Accurate site and terrain information for
+              planning, design and engineering.
+            </p>
+
+          </a>
+
+
+
+          <a
+            class="teaser"
+            href="services.html"
+          >
+
+            <span>
+              03
+            </span>
+
+            <h3
+              data-en="Engineering Consultancy"
+              data-ar="الاستشارات الهندسية"
+            >
+              Engineering Consultancy
+            </h3>
+
+            <p
+              data-en="Practical engineering support for project planning and development."
+              data-ar="دعم هندسي عملي لتخطيط المشاريع وتطويرها."
+            >
+              Practical engineering support for project
+              planning and development.
+            </p>
+
+          </a>
+
+        </div>
+
+
+        <a
+          class="inline-link"
+          href="about.html"
+          data-en="Discover Khaleej Vision →"
+          data-ar="تعرف على خليج فيجن ←"
+        >
+          Discover Khaleej Vision →
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
+
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+
   <footer class="site-footer">
+
     <div class="container footer-grid">
-      <div class="footer-brand"><a class="footer-lockup" href="index.html" aria-label="Khaleej Vision home"><svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true"><ellipse cx="60" cy="60" rx="44" ry="25" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="60" cy="60" r="15" fill="none" stroke="currentColor" stroke-width="5"/><line x1="60" y1="8" x2="60" y2="112" stroke="currentColor" stroke-width="3"/><line x1="8" y1="60" x2="112" y2="60" stroke="currentColor" stroke-width="3"/><path d="M32 76 C48 66,72 66,88 76" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg><span class="brand-text"><strong>KHALEEJ VISION</strong><small>LAND SURVEYING &amp; ENGINEERING CONSULTANCY</small></span></a><p data-en="Land surveying and engineering consultancy in Oman. Part of Pearl Island LLC." data-ar="خدمات المساحة والاستشارات الهندسية في سلطنة عُمان. جزء من Pearl Island LLC.">Land surveying and engineering consultancy in Oman. Part of Pearl Island LLC.</p></div>
-      <div><h4 data-en="Services" data-ar="الخدمات">Services</h4><a href="services.html" data-en="Survey Consultancy Services" data-ar="خدمات الاستشارات المساحية">Survey Consultancy Services</a><a href="services.html" data-en="Topographical & Engineering Survey" data-ar="الرفع الطبوغرافي والمسح الهندسي">Topographical & Engineering Survey</a><a href="services.html" data-en="Engineering Consultancy" data-ar="الاستشارات الهندسية">Engineering Consultancy</a></div>
-      <div><h4 data-en="Contact" data-ar="التواصل">Contact</h4><p>+968 7114 7179</p><p>+968 9729 7224</p><p>fahadbasheer724@gmail.com</p></div>
-      <div><h4 data-en="Office" data-ar="المكتب">Office</h4><p data-en="Floor 3, Office 32, Modern Tower, Burger Garage Building, Souq, Al Khoudh St, Seeb 112, Oman." data-ar="الطابق الثالث، مكتب 32، البرج الحديث، مبنى Burger Garage، السوق، شارع الخوض، السيب 112، سلطنة عُمان.">Floor 3, Office 32, Modern Tower, Burger Garage Building, Souq, Al Khoudh St, Seeb 112, Oman.</p></div>
+
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-lockup"
+          href="index.html"
+          aria-label="Khaleej Vision home"
+        >
+
+          <svg
+            class="brand-mark"
+            viewBox="0 0 120 120"
+            aria-hidden="true"
+          >
+
+            <ellipse
+              cx="60"
+              cy="60"
+              rx="44"
+              ry="25"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="5"
+            />
+
+            <circle
+              cx="60"
+              cy="60"
+              r="15"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="5"
+            />
+
+            <line
+              x1="60"
+              y1="8"
+              x2="60"
+              y2="112"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+
+            <line
+              x1="8"
+              y1="60"
+              x2="112"
+              y2="60"
+              stroke="currentColor"
+              stroke-width="3"
+            />
+
+            <path
+              d="M32 76 C48 66,72 66,88 76"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+
+          </svg>
+
+
+          <span class="brand-text">
+
+            <strong>
+              KHALEEJ VISION
+            </strong>
+
+            <small>
+              LAND SURVEYING &amp; ENGINEERING CONSULTANCY
+            </small>
+
+          </span>
+
+        </a>
+
+
+        <p
+          data-en="Land surveying and engineering consultancy in Oman. Part of Pearl Island LLC."
+          data-ar="خدمات المساحة والاستشارات الهندسية في سلطنة عُمان. جزء من Pearl Island LLC."
+        >
+          Land surveying and engineering consultancy in Oman.
+          Part of Pearl Island LLC.
+        </p>
+
+      </div>
+
+
+
+      <div>
+
+        <h4
+          data-en="Services"
+          data-ar="الخدمات"
+        >
+          Services
+        </h4>
+
+
+        <a
+          href="services.html"
+          data-en="Survey Consultancy Services"
+          data-ar="خدمات الاستشارات المساحية"
+        >
+          Survey Consultancy Services
+        </a>
+
+
+        <a
+          href="services.html"
+          data-en="Topographical & Engineering Survey"
+          data-ar="الرفع الطبوغرافي والمسح الهندسي"
+        >
+          Topographical &amp; Engineering Survey
+        </a>
+
+
+        <a
+          href="services.html"
+          data-en="Engineering Consultancy"
+          data-ar="الاستشارات الهندسية"
+        >
+          Engineering Consultancy
+        </a>
+
+      </div>
+
+
+
+      <div>
+
+        <h4
+          data-en="Contact"
+          data-ar="التواصل"
+        >
+          Contact
+        </h4>
+
+        <p>
+          +968 7114 7179
+        </p>
+
+        <p>
+          +968 9729 7224
+        </p>
+
+        <p>
+          fahadbasheer724@gmail.com
+        </p>
+
+      </div>
+
+
+
+      <div>
+
+        <h4
+          data-en="Office"
+          data-ar="المكتب"
+        >
+          Office
+        </h4>
+
+
+        <p
+          data-en="Floor 3, Office 32, Modern Tower, Burger Garage Building, Souq, Al Khoudh St, Seeb 112, Oman."
+          data-ar="الطابق الثالث، مكتب 32، البرج الحديث، مبنى Burger Garage، السوق، شارع الخوض، السيب 112، سلطنة عُمان."
+        >
+          Floor 3, Office 32, Modern Tower,
+          Burger Garage Building, Souq,
+          Al Khoudh St, Seeb 112, Oman.
+        </p>
+
+      </div>
+
     </div>
-    <div class="container footer-bottom"><span>© 2026 Khaleej Vision</span><span data-en="A Pearl Island LLC Company" data-ar="إحدى شركات Pearl Island LLC">A Pearl Island LLC Company</span></div>
+
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © 2026 Khaleej Vision
+      </span>
+
+      <span
+        data-en="A Pearl Island LLC Company"
+        data-ar="إحدى شركات Pearl Island LLC"
+      >
+        A Pearl Island LLC Company
+      </span>
+
+    </div>
+
   </footer>
 
+
+
+  <!-- Main site JavaScript -->
+
   <script src="script.js"></script>
+
 </body>
+
 </html>

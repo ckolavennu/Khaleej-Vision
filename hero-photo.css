@@ -1,240 +1,1378 @@
-/* Khaleej Vision homepage hero — photographic mockup direction */
+/* =========================================================
+   KHALEEJ VISION HOMEPAGE
+   PHOTOGRAPHIC HERO
+   ========================================================= */
+
 
 .home-photo-hero{
-  position:relative;
-  min-height:max(820px,100vh);
-  overflow:hidden;
-  color:#fff;
-  background:
-    radial-gradient(circle at 72% 32%,rgba(36,72,96,.16),transparent 34%),
-    linear-gradient(90deg,#07111c 0%,#08131f 36%,#0a1622 58%,#0b1825 100%);
+    position:relative;
+
+    min-height:max(820px,100vh);
+
+    overflow:hidden;
+
+    color:#fff;
+
+    background:
+        radial-gradient(
+            circle at 72% 32%,
+            rgba(36,72,96,.16),
+            transparent 34%
+        ),
+
+        linear-gradient(
+            90deg,
+            #07111c 0%,
+            #08131f 36%,
+            #0a1622 58%,
+            #0b1825 100%
+        );
 }
+
+
+
+/* =========================================================
+   HERO TECHNICAL GRID
+   ========================================================= */
 
 .home-photo-hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  z-index:2;
-  opacity:.08;
-  background-image:
-    linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
-  background-size:70px 70px;
-  mask-image:linear-gradient(to right,transparent 0%,transparent 30%,#000 67%,#000 100%);
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:2;
+
+    opacity:.08;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,.045) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.045) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        70px
+        70px;
+
+    mask-image:
+        linear-gradient(
+            to right,
+            transparent 0%,
+            transparent 30%,
+            #000 67%,
+            #000 100%
+        );
+
+    -webkit-mask-image:
+        linear-gradient(
+            to right,
+            transparent 0%,
+            transparent 30%,
+            #000 67%,
+            #000 100%
+        );
 }
+
+
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
 
 .home-hero-photo{
-  position:absolute;
-  z-index:1;
-  inset:0;
-  overflow:hidden;
-  background:#0a1622;
+    position:absolute;
+
+    z-index:1;
+
+    inset:0;
+
+    overflow:hidden;
+
+    background:#0a1622;
 }
+
 
 .home-hero-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:72% center;
-  display:block;
-  filter:saturate(.96) contrast(1.04) brightness(.92);
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:
+        72%
+        center;
+
+    display:block;
+
+    filter:
+        saturate(.96)
+        contrast(1.04)
+        brightness(.92);
 }
+
+
+
+/* =========================================================
+   HERO DARK BLEND
+   ========================================================= */
 
 .home-hero-photo::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(5,14,23,.99) 0%,
-      rgba(5,14,23,.97) 16%,
-      rgba(5,14,23,.91) 30%,
-      rgba(5,14,23,.72) 42%,
-      rgba(5,14,23,.44) 54%,
-      rgba(5,14,23,.18) 68%,
-      rgba(5,14,23,.05) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(5,14,23,.34) 0%,
-      rgba(5,14,23,.08) 56%,
-      rgba(5,14,23,.14) 100%
-    );
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+
+        linear-gradient(
+            90deg,
+
+            rgba(5,14,23,.99) 0%,
+
+            rgba(5,14,23,.97) 16%,
+
+            rgba(5,14,23,.91) 30%,
+
+            rgba(5,14,23,.72) 42%,
+
+            rgba(5,14,23,.44) 54%,
+
+            rgba(5,14,23,.18) 68%,
+
+            rgba(5,14,23,.05) 100%
+        ),
+
+        linear-gradient(
+            0deg,
+
+            rgba(5,14,23,.34) 0%,
+
+            rgba(5,14,23,.08) 56%,
+
+            rgba(5,14,23,.14) 100%
+        );
 }
+
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
 
 .home-hero-inner{
-  position:relative;
-  z-index:4;
-  min-height:max(820px,100vh);
-  display:flex;
-  align-items:center;
-  padding-top:185px;
-  padding-bottom:110px;
+    position:relative;
+
+    z-index:4;
+
+    min-height:max(820px,100vh);
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:185px;
+
+    padding-bottom:110px;
 }
+
 
 .home-hero-copy{
-  width:43%;
-  max-width:660px;
+    width:43%;
+
+    max-width:660px;
 }
+
 
 .home-hero-title{
-  margin:0;
-  color:#fff;
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(54px,4.9vw,84px);
-  font-weight:600;
-  line-height:.95;
-  letter-spacing:-.03em;
+    margin:0;
+
+    color:#fff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            54px,
+            4.9vw,
+            84px
+        );
+
+    font-weight:600;
+
+    line-height:.95;
+
+    letter-spacing:-.03em;
 }
+
 
 .home-hero-title .gold-dot{
-  color:var(--gold-light);
+    color:var(--gold-light);
 }
+
 
 .home-hero-lead{
-  max-width:555px;
-  margin:34px 0 36px;
-  color:rgba(255,255,255,.77);
-  font-size:18px;
-  line-height:1.72;
+    max-width:555px;
+
+    margin:
+        34px
+        0
+        36px;
+
+    color:
+        rgba(255,255,255,.77);
+
+    font-size:18px;
+
+    line-height:1.72;
 }
+
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
 
 .home-photo-hero .hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:24px;
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:24px;
 }
+
 
 .home-photo-hero .hero-actions .btn{
-  min-width:278px;
-  min-height:70px;
-  font-size:12px;
-  letter-spacing:.09em;
+    min-width:278px;
+
+    min-height:70px;
+
+    font-size:12px;
+
+    letter-spacing:.09em;
 }
+
 
 .home-photo-hero .btn-outline{
-  border-color:rgba(221,187,106,.72);
+    border-color:
+        rgba(221,187,106,.72);
 }
+
 
 .home-photo-hero .btn-outline:hover{
-  border-color:var(--gold-light);
-  color:var(--gold-light);
+    border-color:
+        var(--gold-light);
+
+    color:
+        var(--gold-light);
 }
+
+
+
+/* =========================================================
+   HERO MOTTO
+   ========================================================= */
 
 .home-hero-motto{
-  position:absolute;
-  z-index:5;
-  left:max(32px,calc((100vw - min(var(--container),calc(100vw - 64px)))/2));
-  bottom:52px;
-  display:flex;
-  align-items:center;
-  gap:24px;
-  color:rgba(255,255,255,.43);
-  font-size:11px;
-  letter-spacing:.22em;
-  text-transform:uppercase;
+    position:absolute;
+
+    z-index:5;
+
+    left:
+        max(
+            32px,
+            calc(
+                (
+                    100vw -
+                    min(
+                        var(--container),
+                        calc(100vw - 64px)
+                    )
+                ) / 2
+            )
+        );
+
+    bottom:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+    color:
+        rgba(255,255,255,.43);
+
+    font-size:11px;
+
+    letter-spacing:.22em;
+
+    text-transform:uppercase;
 }
+
 
 .home-hero-motto::before{
-  content:"";
-  width:42px;
-  height:2px;
-  background:var(--gold);
+    content:"";
+
+    width:42px;
+
+    height:2px;
+
+    background:
+        var(--gold);
 }
+
+
+
+/* =========================================================
+   RTL HERO
+   ========================================================= */
 
 body.rtl .home-hero-copy{
-  margin-left:auto;
-  margin-right:0;
-  text-align:right;
+    margin-left:auto;
+
+    margin-right:0;
+
+    text-align:right;
 }
+
 
 body.rtl .home-hero-title{
-  font-family:Tahoma,"Segoe UI",Arial,sans-serif;
-  line-height:1.32;
-  letter-spacing:0;
+    font-family:
+        Tahoma,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    line-height:1.32;
+
+    letter-spacing:0;
 }
+
 
 body.rtl .home-hero-photo{
-  inset:0;
+    inset:0;
 }
+
+
 body.rtl .home-hero-photo::after{
-  background:
-    linear-gradient(
-      270deg,
-      rgba(5,14,23,.97) 0%,
-      rgba(5,14,23,.92) 34%,
-      rgba(5,14,23,.62) 62%,
-      rgba(5,14,23,.28) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(5,14,23,.54),
-      rgba(5,14,23,.10) 58%,
-      rgba(5,14,23,.20)
-    );
+    background:
+
+        linear-gradient(
+            270deg,
+
+            rgba(5,14,23,.97) 0%,
+
+            rgba(5,14,23,.92) 34%,
+
+            rgba(5,14,23,.62) 62%,
+
+            rgba(5,14,23,.28) 100%
+        ),
+
+        linear-gradient(
+            0deg,
+
+            rgba(5,14,23,.54),
+
+            rgba(5,14,23,.10) 58%,
+
+            rgba(5,14,23,.20)
+        );
 }
+
 
 body.rtl .home-hero-motto{
-  left:auto;
-  right:max(32px,calc((100vw - min(var(--container),calc(100vw - 64px)))/2));
+    left:auto;
+
+    right:
+        max(
+            32px,
+            calc(
+                (
+                    100vw -
+                    min(
+                        var(--container),
+                        calc(100vw - 64px)
+                    )
+                ) / 2
+            )
+        );
 }
+
+
+
+/* =========================================================
+   HERO — MEDIUM DESKTOP
+   ========================================================= */
 
 @media(max-width:1350px){
-  .home-photo-hero .hero-actions{gap:14px}
-  .home-photo-hero .hero-actions .btn{min-width:230px;padding:0 20px}
-  .home-hero-copy{width:45%}
+
+    .home-photo-hero .hero-actions{
+        gap:14px;
+    }
+
+
+    .home-photo-hero .hero-actions .btn{
+        min-width:230px;
+
+        padding:
+            0
+            20px;
+    }
+
+
+    .home-hero-copy{
+        width:45%;
+    }
+
 }
+
+
+
+/* =========================================================
+   HERO — SMALLER DESKTOP
+   ========================================================= */
 
 @media(max-width:1180px){
-  .home-photo-hero .home-hero-photo{left:43%}
-  body.rtl .home-photo-hero .home-hero-photo{left:0;right:43%}
-  .home-hero-title{font-size:clamp(54px,5.5vw,76px)}
+
+    .home-photo-hero .home-hero-photo{
+        left:43%;
+    }
+
+
+    body.rtl
+    .home-photo-hero
+    .home-hero-photo{
+        left:0;
+
+        right:43%;
+    }
+
+
+    .home-hero-title{
+        font-size:
+            clamp(
+                54px,
+                5.5vw,
+                76px
+            );
+    }
+
 }
+
+
+
+/* =========================================================
+   HERO — TABLET
+   ========================================================= */
 
 @media(max-width:980px){
-  .home-photo-hero{min-height:880px}
-  .home-hero-photo{inset:0}
-  body.rtl .home-hero-photo{inset:0}
-  .home-hero-photo::after,
-  body.rtl .home-hero-photo::after{
-    background:
-      linear-gradient(
-        90deg,
-        rgba(5,14,23,.97) 0%,
-        rgba(5,14,23,.92) 34%,
-        rgba(5,14,23,.62) 62%,
-        rgba(5,14,23,.28) 100%
-      ),
-      linear-gradient(
-        0deg,
-        rgba(5,14,23,.54),
-        rgba(5,14,23,.10) 58%,
-        rgba(5,14,23,.20)
-      );
-  }
-  body.rtl .home-hero-photo::after{
-    background:
-      linear-gradient(270deg,rgba(7,17,28,.97) 0%,rgba(7,17,28,.90) 40%,rgba(7,17,28,.50) 72%,rgba(7,17,28,.28) 100%),
-      linear-gradient(0deg,rgba(4,10,17,.58),rgba(4,10,17,.06) 58%,rgba(4,10,17,.20));
-  }
-  .home-hero-inner{min-height:880px;padding-top:150px;padding-bottom:120px;align-items:center}
-  .home-hero-copy{width:72%;max-width:640px}
-  .home-hero-title{font-size:64px}
+
+    .home-photo-hero{
+        min-height:880px;
+    }
+
+
+    .home-hero-photo{
+        inset:0;
+    }
+
+
+    body.rtl
+    .home-hero-photo{
+        inset:0;
+    }
+
+
+    .home-hero-photo::after,
+
+    body.rtl
+    .home-hero-photo::after{
+
+        background:
+
+            linear-gradient(
+                90deg,
+
+                rgba(5,14,23,.97) 0%,
+
+                rgba(5,14,23,.92) 34%,
+
+                rgba(5,14,23,.62) 62%,
+
+                rgba(5,14,23,.28) 100%
+            ),
+
+            linear-gradient(
+                0deg,
+
+                rgba(5,14,23,.54),
+
+                rgba(5,14,23,.10) 58%,
+
+                rgba(5,14,23,.20)
+            );
+    }
+
+
+    body.rtl
+    .home-hero-photo::after{
+
+        background:
+
+            linear-gradient(
+                270deg,
+
+                rgba(7,17,28,.97) 0%,
+
+                rgba(7,17,28,.90) 40%,
+
+                rgba(7,17,28,.50) 72%,
+
+                rgba(7,17,28,.28) 100%
+            ),
+
+            linear-gradient(
+                0deg,
+
+                rgba(4,10,17,.58),
+
+                rgba(4,10,17,.06) 58%,
+
+                rgba(4,10,17,.20)
+            );
+    }
+
+
+    .home-hero-inner{
+        min-height:880px;
+
+        padding-top:150px;
+
+        padding-bottom:120px;
+
+        align-items:center;
+    }
+
+
+    .home-hero-copy{
+        width:72%;
+
+        max-width:640px;
+    }
+
+
+    .home-hero-title{
+        font-size:64px;
+    }
+
 }
 
+
+
+/* =========================================================
+   HERO — MOBILE
+   ========================================================= */
+
 @media(max-width:620px){
-  .home-photo-hero{min-height:820px}
-  .home-hero-photo{inset:0}
-  .home-hero-photo img{object-position:76% center}
-  .home-hero-inner{min-height:820px;padding-top:118px;padding-bottom:110px}
-  .home-hero-copy{width:100%;max-width:100%}
-  .home-hero-title{font-size:48px}
-  .home-hero-lead{font-size:15px;max-width:92%;margin:26px 0 30px}
-  .home-photo-hero .hero-actions{flex-direction:column;align-items:stretch;width:min(100%,340px)}
-  .home-photo-hero .hero-actions .btn{width:100%;min-width:0;min-height:56px}
-  .home-hero-motto{left:14px;right:14px;bottom:24px;font-size:8px;letter-spacing:.15em;gap:12px}
-  body.rtl .home-hero-motto{left:14px;right:14px}
+
+    .home-photo-hero{
+        min-height:820px;
+    }
+
+
+    .home-hero-photo{
+        inset:0;
+    }
+
+
+    .home-hero-photo img{
+        object-position:
+            76%
+            center;
+    }
+
+
+    .home-hero-inner{
+        min-height:820px;
+
+        padding-top:118px;
+
+        padding-bottom:110px;
+    }
+
+
+    .home-hero-copy{
+        width:100%;
+
+        max-width:100%;
+    }
+
+
+    .home-hero-title{
+        font-size:48px;
+    }
+
+
+    .home-hero-lead{
+        max-width:92%;
+
+        margin:
+            26px
+            0
+            30px;
+
+        font-size:15px;
+    }
+
+
+    .home-photo-hero
+    .hero-actions{
+        flex-direction:column;
+
+        align-items:stretch;
+
+        width:
+            min(
+                100%,
+                340px
+            );
+    }
+
+
+    .home-photo-hero
+    .hero-actions
+    .btn{
+        width:100%;
+
+        min-width:0;
+
+        min-height:56px;
+    }
+
+
+    .home-hero-motto{
+        left:14px;
+
+        right:14px;
+
+        bottom:24px;
+
+        gap:12px;
+
+        font-size:8px;
+
+        letter-spacing:.15em;
+    }
+
+
+    body.rtl
+    .home-hero-motto{
+        left:14px;
+
+        right:14px;
+    }
+
+}
+
+
+
+/* =========================================================
+   =========================================================
+   KHALEEJ VISION OPENING INTRO
+   =========================================================
+   ========================================================= */
+
+
+/*
+   If this session already saw the intro, index.html places
+   .kv-intro-skip on the <html> element before the page paints.
+   This prevents a flash of the animation on return visits.
+*/
+
+.kv-intro-skip
+.kv-intro{
+    display:none !important;
+}
+
+
+
+/* =========================================================
+   INTRO OVERLAY
+   ========================================================= */
+
+.kv-intro{
+    position:fixed;
+
+    inset:0;
+
+    z-index:99999;
+
+    overflow:hidden;
+
+    background:#040B12;
+
+    opacity:1;
+
+    visibility:visible;
+
+    cursor:default;
+
+    transition:
+        opacity .85s
+        cubic-bezier(.4,0,.2,1),
+
+        visibility .85s
+        ease;
+}
+
+
+/*
+   Prevent scrolling while the opening sequence is running.
+*/
+
+body.intro-active{
+    overflow:hidden;
+}
+
+
+
+/* =========================================================
+   INTRO IMAGE
+   ========================================================= */
+
+.kv-intro-media{
+    position:absolute;
+
+    inset:-2%;
+
+    overflow:hidden;
+}
+
+
+.kv-intro-media img{
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:
+        center
+        center;
+
+    display:block;
+
+    opacity:0;
+
+    transform:
+        scale(1.065);
+
+    animation:
+        kvIntroImage
+        3.4s
+        cubic-bezier(.2,.7,.2,1)
+        forwards;
+
+    will-change:
+        transform,
+        opacity;
+}
+
+
+
+/* =========================================================
+   INTRO CINEMATIC OVERLAY
+   ========================================================= */
+
+.kv-intro-shade{
+    position:absolute;
+
+    inset:0;
+
+    z-index:2;
+
+    pointer-events:none;
+
+    background:
+
+        linear-gradient(
+            180deg,
+
+            rgba(4,10,17,.16) 0%,
+
+            rgba(4,10,17,.08) 34%,
+
+            rgba(4,10,17,.14) 63%,
+
+            rgba(4,10,17,.50) 100%
+        ),
+
+        radial-gradient(
+            circle at center,
+
+            rgba(4,10,17,.00) 18%,
+
+            rgba(4,10,17,.10) 52%,
+
+            rgba(4,10,17,.34) 100%
+        );
+}
+
+
+
+/* =========================================================
+   SUBTLE INTRO TECHNICAL GRID
+   ========================================================= */
+
+.kv-intro-grid{
+    position:absolute;
+
+    inset:0;
+
+    z-index:3;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(221,187,106,.10) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(221,187,106,.10) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        90px
+        90px;
+
+    mask-image:
+        radial-gradient(
+            circle at center,
+            rgba(0,0,0,.55),
+            transparent 72%
+        );
+
+    -webkit-mask-image:
+        radial-gradient(
+            circle at center,
+            rgba(0,0,0,.55),
+            transparent 72%
+        );
+
+    animation:
+        kvIntroGrid
+        1.2s
+        ease
+        1.25s
+        forwards;
+}
+
+
+
+/* =========================================================
+   INTRO CONTENT POSITIONING
+   ========================================================= */
+
+.kv-intro-content{
+    position:absolute;
+
+    inset:0;
+
+    z-index:5;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    pointer-events:none;
+}
+
+
+.kv-intro-arabic{
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transform:
+        translateY(12px);
+}
+
+
+
+/* =========================================================
+   INTRO — عُمان
+   ========================================================= */
+
+.kv-intro-arabic h1{
+    margin:0;
+
+    color:#fff;
+
+    font-family:
+        Tahoma,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(
+            76px,
+            8vw,
+            132px
+        );
+
+    font-weight:500;
+
+    line-height:1.08;
+
+    letter-spacing:0;
+
+    opacity:0;
+
+    transform:
+        translateY(24px);
+
+    text-shadow:
+        0 6px 34px
+        rgba(0,0,0,.36);
+
+    animation:
+        kvIntroTitle
+        .90s
+        cubic-bezier(.2,.75,.2,1)
+        .58s
+        forwards;
+
+    will-change:
+        transform,
+        opacity;
+}
+
+
+
+/* =========================================================
+   INTRO — أرض الفرص
+   ========================================================= */
+
+.kv-intro-arabic p{
+    margin:
+        12px
+        0
+        0;
+
+    color:
+        rgba(255,255,255,.90);
+
+    font-family:
+        Tahoma,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(
+            25px,
+            2.35vw,
+            39px
+        );
+
+    font-weight:400;
+
+    line-height:1.35;
+
+    opacity:0;
+
+    transform:
+        translateY(15px);
+
+    text-shadow:
+        0 4px 24px
+        rgba(0,0,0,.32);
+
+    animation:
+        kvIntroSubtitle
+        .80s
+        cubic-bezier(.2,.75,.2,1)
+        .95s
+        forwards;
+
+    will-change:
+        transform,
+        opacity;
+}
+
+
+
+/* =========================================================
+   INTRO GOLD LINE
+   ========================================================= */
+
+.kv-intro-line{
+    display:block;
+
+    width:0;
+
+    height:2px;
+
+    margin-top:24px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--gold),
+            var(--gold-light),
+            var(--gold),
+            transparent
+        );
+
+    box-shadow:
+        0 0 15px
+        rgba(221,187,106,.28);
+
+    animation:
+        kvIntroLine
+        .75s
+        cubic-bezier(.3,.8,.2,1)
+        1.34s
+        forwards;
+}
+
+
+
+/* =========================================================
+   INTRO COMPANY SIGNATURE
+   ========================================================= */
+
+.kv-intro-brand{
+    position:absolute;
+
+    z-index:6;
+
+    left:50%;
+
+    bottom:38px;
+
+    transform:
+        translateX(-50%)
+        translateY(9px);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    color:
+        rgba(255,255,255,.48);
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size:9px;
+
+    font-weight:600;
+
+    letter-spacing:.27em;
+
+    white-space:nowrap;
+
+    opacity:0;
+
+    animation:
+        kvIntroBrand
+        .75s
+        ease
+        1.55s
+        forwards;
+}
+
+
+.kv-intro-brand-line{
+    width:30px;
+
+    height:1px;
+
+    background:
+        rgba(221,187,106,.55);
+}
+
+
+
+/* =========================================================
+   INTRO EXIT
+   ========================================================= */
+
+.kv-intro.is-leaving{
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+}
+
+
+
+/* =========================================================
+   INTRO ANIMATION KEYFRAMES
+   ========================================================= */
+
+@keyframes kvIntroImage{
+
+    0%{
+        opacity:0;
+
+        transform:
+            scale(1.065);
+    }
+
+
+    16%{
+        opacity:1;
+    }
+
+
+    100%{
+        opacity:1;
+
+        transform:
+            scale(1.012);
+    }
+
+}
+
+
+
+@keyframes kvIntroTitle{
+
+    from{
+        opacity:0;
+
+        transform:
+            translateY(24px);
+    }
+
+
+    to{
+        opacity:1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+
+@keyframes kvIntroSubtitle{
+
+    from{
+        opacity:0;
+
+        transform:
+            translateY(15px);
+    }
+
+
+    to{
+        opacity:1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+
+@keyframes kvIntroLine{
+
+    from{
+        width:0;
+    }
+
+
+    to{
+        width:110px;
+    }
+
+}
+
+
+
+@keyframes kvIntroBrand{
+
+    from{
+        opacity:0;
+
+        transform:
+            translateX(-50%)
+            translateY(9px);
+    }
+
+
+    to{
+        opacity:1;
+
+        transform:
+            translateX(-50%)
+            translateY(0);
+    }
+
+}
+
+
+
+@keyframes kvIntroGrid{
+
+    from{
+        opacity:0;
+    }
+
+
+    to{
+        opacity:.075;
+    }
+
+}
+
+
+
+/* =========================================================
+   INTRO — MOBILE
+   ========================================================= */
+
+@media(max-width:620px){
+
+    .kv-intro-media{
+        inset:0;
+    }
+
+
+    .kv-intro-media img{
+        object-position:
+            54%
+            center;
+    }
+
+
+    .kv-intro-arabic{
+        transform:
+            translateY(4px);
+    }
+
+
+    .kv-intro-arabic h1{
+        font-size:68px;
+    }
+
+
+    .kv-intro-arabic p{
+        margin-top:8px;
+
+        font-size:25px;
+    }
+
+
+    .kv-intro-line{
+        margin-top:20px;
+    }
+
+
+    .kv-intro-brand{
+        bottom:27px;
+
+        gap:9px;
+
+        font-size:7px;
+
+        letter-spacing:.20em;
+    }
+
+
+    .kv-intro-brand-line{
+        width:18px;
+    }
+
+}
+
+
+
+/* =========================================================
+   INTRO — REDUCED MOTION
+   ========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    .kv-intro-media img,
+
+    .kv-intro-grid,
+
+    .kv-intro-arabic h1,
+
+    .kv-intro-arabic p,
+
+    .kv-intro-line,
+
+    .kv-intro-brand{
+
+        animation:none !important;
+
+        opacity:1 !important;
+
+        transform:none !important;
+    }
+
+
+    .kv-intro-line{
+        width:110px;
+    }
+
+
+    .kv-intro{
+        transition:
+            opacity .25s ease;
+    }
+
 }
