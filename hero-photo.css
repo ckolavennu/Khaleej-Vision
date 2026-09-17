@@ -1,58 +1,5 @@
 /* Khaleej Vision homepage hero — photographic mockup direction */
 
-.home-page .site-header{
-  background:rgba(10,18,26,.58);
-
-  backdrop-filter:blur(16px) saturate(120%);
-  -webkit-backdrop-filter:blur(16px) saturate(120%);
-
-  border-bottom:1px solid rgba(255,255,255,.10);
-
-  box-shadow:
-    0 8px 30px rgba(0,0,0,.10);
-
-  transition:
-    background .25s ease,
-    backdrop-filter .25s ease,
-    box-shadow .25s ease;
-}
-
-.home-page .site-header.scrolled{
-  background:rgba(7,17,28,.88);
-
-  backdrop-filter:blur(20px) saturate(125%);
-  -webkit-backdrop-filter:blur(20px) saturate(125%);
-
-  border-bottom:1px solid rgba(255,255,255,.09);
-
-  box-shadow:
-    0 10px 32px rgba(0,0,0,.20);
-}
-
-.home-page .nav-wrap{
-  height:112px;
-}
-
-.home-page .kv-brand-logo{
-  width:400px !important;
-  max-width:33vw !important;
-  height:auto !important;
-}
-
-.home-page .brand-lockup,
-.home-page .kv-selected-logo-lockup{
-  min-width:400px !important;
-}
-
-.home-page .desktop-nav{
-  gap:42px;
-}
-
-.home-page .btn-nav{
-  min-height:64px;
-  padding:0 34px;
-}
-
 .home-photo-hero{
   position:relative;
   min-height:max(820px,100vh);
@@ -236,25 +183,18 @@ body.rtl .home-hero-motto{
 }
 
 @media(max-width:1350px){
-  .home-page .kv-brand-logo{width:370px !important;max-width:30vw !important}
-  .home-page .brand-lockup,.home-page .kv-selected-logo-lockup{min-width:370px !important}
   .home-photo-hero .hero-actions{gap:14px}
   .home-photo-hero .hero-actions .btn{min-width:230px;padding:0 20px}
   .home-hero-copy{width:45%}
 }
 
 @media(max-width:1180px){
-  .home-page .kv-brand-logo{width:310px !important;max-width:31vw !important}
-  .home-page .brand-lockup,.home-page .kv-selected-logo-lockup{min-width:310px !important}
   .home-photo-hero .home-hero-photo{left:43%}
   body.rtl .home-photo-hero .home-hero-photo{left:0;right:43%}
   .home-hero-title{font-size:clamp(54px,5.5vw,76px)}
 }
 
 @media(max-width:980px){
-  .home-page .nav-wrap{height:92px}
-  .home-page .kv-brand-logo{width:270px !important;max-width:58vw !important}
-  .home-page .brand-lockup,.home-page .kv-selected-logo-lockup{min-width:0 !important}
   .home-photo-hero{min-height:880px}
   .home-hero-photo{inset:0}
   body.rtl .home-hero-photo{inset:0}
@@ -286,8 +226,6 @@ body.rtl .home-hero-motto{
 }
 
 @media(max-width:620px){
-  .home-page .nav-wrap{height:78px}
-  .home-page .kv-brand-logo{width:220px !important;max-width:68vw !important}
   .home-photo-hero{min-height:820px}
   .home-hero-photo{inset:0}
   .home-hero-photo img{object-position:76% center}
