@@ -1539,3 +1539,184 @@ body.rtl.team-page
     }
 
 }
+
+/* =========================================================
+   LIGHT THEME OVERRIDES — TEAM PAGE
+   ========================================================= */
+
+.team-page.theme-active{
+    background:var(--theme-page-bg);
+    color:var(--theme-text);
+}
+
+.team-page.theme-active .eyebrow.dark{
+    color:var(--theme-accent-text);
+}
+
+
+/* Team file has its own header selectors, so these overrides
+   intentionally repeat the global theme header colors. */
+
+.team-page.theme-active .site-header{
+    background:var(--theme-header-bg);
+    border-bottom:1px solid var(--theme-header-border);
+    box-shadow:none;
+}
+
+.team-page.theme-active .site-header.scrolled{
+    background:var(--theme-header-bg-scrolled);
+    border-bottom:1px solid var(--theme-header-border);
+    box-shadow:0 10px 32px var(--theme-shadow);
+}
+
+
+/* Hero */
+
+.team-page.theme-active .team-hero{
+    color:var(--theme-primary);
+    background:
+        radial-gradient(
+            circle at 78% 42%,
+            color-mix(in srgb,var(--theme-tertiary) 38%,transparent),
+            transparent 36%
+        ),
+        linear-gradient(
+            120deg,
+            var(--theme-hero-start) 0%,
+            var(--theme-hero-mid) 52%,
+            var(--theme-hero-end) 100%
+        );
+}
+
+.team-page.theme-active .team-hero-grid{
+    background-image:
+        linear-gradient(
+            color-mix(in srgb,var(--theme-primary) 7%,transparent) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            color-mix(in srgb,var(--theme-primary) 7%,transparent) 1px,
+            transparent 1px
+        );
+}
+
+.team-page.theme-active .team-hero .eyebrow{
+    color:var(--theme-accent-text);
+}
+
+.team-page.theme-active .team-hero h1{
+    color:var(--theme-primary);
+}
+
+.team-page.theme-active .team-hero-copy p{
+    color:var(--theme-muted);
+}
+
+.team-page.theme-active .team-hero-note{
+    color:color-mix(in srgb,var(--theme-muted) 74%,transparent);
+}
+
+
+/* Featured leadership section */
+
+.team-page.theme-active .featured-leadership{
+    background:var(--theme-page-bg);
+}
+
+.team-page.theme-active .leadership-section-heading h2{
+    color:var(--theme-primary);
+}
+
+
+/* Featured leader */
+
+.team-page.theme-active .featured-leader{
+    background:
+        linear-gradient(
+            145deg,
+            var(--theme-strong),
+            color-mix(in srgb,var(--theme-strong) 76%,var(--theme-page-bg))
+        );
+    box-shadow:0 22px 55px var(--theme-shadow);
+}
+
+.team-page.theme-active .featured-leader-content{
+    color:var(--theme-strong-text);
+}
+
+.team-page.theme-active .featured-leader-content .eyebrow,
+.team-page.theme-active .leader-fact strong,
+.team-page.theme-active .featured-career-heading span,
+.team-page.theme-active .featured-career-item > span{
+    color:var(--theme-accent-text);
+}
+
+.team-page.theme-active .featured-leader-content > h2,
+.team-page.theme-active .featured-career-item strong{
+    color:var(--theme-strong-text);
+}
+
+.team-page.theme-active .featured-leader-intro,
+.team-page.theme-active .leader-fact span,
+.team-page.theme-active .featured-career-item small{
+    color:var(--theme-strong-muted);
+}
+
+.team-page.theme-active .leader-facts,
+.team-page.theme-active .leader-fact,
+.team-page.theme-active .featured-career-item{
+    border-color:var(--theme-strong-border);
+}
+
+
+/* Executive leadership */
+
+.team-page.theme-active .executive-leadership{
+    background:var(--theme-page-alt);
+}
+
+.team-page.theme-active .executive-heading h2{
+    color:var(--theme-primary);
+}
+
+.team-page.theme-active .executive-heading > p{
+    color:var(--theme-muted);
+}
+
+.team-page.theme-active .executive-card{
+    background:var(--theme-surface);
+    border-color:var(--theme-border);
+}
+
+.team-page.theme-active .executive-card:hover{
+    border-color:color-mix(in srgb,var(--gold) 48%,var(--theme-border));
+    box-shadow:0 20px 45px var(--theme-shadow);
+}
+
+.team-page.theme-active .executive-content h3,
+.team-page.theme-active .executive-detail > strong,
+.team-page.theme-active .executive-detail li strong{
+    color:var(--theme-primary);
+}
+
+.team-page.theme-active .executive-bio,
+.team-page.theme-active .executive-detail > small,
+.team-page.theme-active .executive-detail li small{
+    color:var(--theme-muted);
+}
+
+.team-page.theme-active .executive-divider,
+.team-page.theme-active .executive-detail ul,
+.team-page.theme-active .executive-detail li{
+    border-color:var(--theme-border);
+}
+
+.team-page.theme-active .executive-divider{
+    background:var(--theme-border);
+}
+
+.team-page.theme-active .executive-role,
+.team-page.theme-active .executive-detail > span{
+    color:var(--theme-accent-text);
+}

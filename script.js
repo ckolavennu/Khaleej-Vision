@@ -26,6 +26,121 @@
     document.querySelector('.site-header');
 
 
+  /* =======================================================
+     SITE COLOR THEME
+     ======================================================= */
+
+  /*
+    DEFAULT THEME
+
+    Change this one line to switch the entire site:
+
+      'theme-sky-sand'
+      'theme-champagne'
+      'theme-modern-greige'
+
+    If a page already has one of those classes directly on
+    <body>, that HTML class takes priority over this default.
+  */
+
+  const SITE_THEME =
+    'theme-champagne';
+
+
+  const AVAILABLE_SITE_THEMES = [
+    'theme-sky-sand',
+    'theme-champagne',
+    'theme-modern-greige'
+  ];
+
+
+  function applySiteTheme(themeName = SITE_THEME) {
+
+    const declaredTheme =
+      AVAILABLE_SITE_THEMES.find(
+        theme =>
+          body.classList.contains(theme)
+      );
+
+
+    /*
+      A theme explicitly written into the page's <body>
+      class wins over the JavaScript default.
+    */
+
+    if (declaredTheme) {
+
+      body.classList.add(
+        'theme-active'
+      );
+
+      return declaredTheme;
+    }
+
+
+    if (
+      !AVAILABLE_SITE_THEMES.includes(themeName)
+    ) {
+
+      console.warn(
+        `Unknown Khaleej Vision theme: ${themeName}`
+      );
+
+      return null;
+    }
+
+
+    body.classList.add(
+      'theme-active',
+      themeName
+    );
+
+
+    return themeName;
+
+  }
+
+
+  /*
+    Handy while testing in DevTools:
+
+      setKhaleejTheme('theme-sky-sand')
+      setKhaleejTheme('theme-champagne')
+      setKhaleejTheme('theme-modern-greige')
+  */
+
+  window.setKhaleejTheme =
+    function (themeName) {
+
+      if (
+        !AVAILABLE_SITE_THEMES.includes(themeName)
+      ) {
+
+        console.warn(
+          `Unknown Khaleej Vision theme: ${themeName}`
+        );
+
+        return;
+
+      }
+
+
+      body.classList.remove(
+        ...AVAILABLE_SITE_THEMES
+      );
+
+
+      body.classList.add(
+        'theme-active',
+        themeName
+      );
+
+    };
+
+
+  applySiteTheme();
+
+
 
   /* =======================================================
      KHALEEJ VISION BRAND LOGO
@@ -272,7 +387,7 @@
 
 
           note.style.color =
-            '#DDBB6A';
+            'var(--gold-light)';
 
         }
 

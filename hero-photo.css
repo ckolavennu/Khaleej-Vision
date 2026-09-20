@@ -1376,3 +1376,174 @@ body.intro-active{
     }
 
 }
+
+/* =========================================================
+   LIGHT THEME OVERRIDES — HOMEPAGE PHOTOGRAPHIC HERO
+   ---------------------------------------------------------
+   The opening Oman intro remains intentionally cinematic.
+   Only the persistent homepage hero is recolored here.
+   ========================================================= */
+
+body.theme-active .home-photo-hero{
+    color:var(--theme-primary);
+    background:
+        radial-gradient(
+            circle at 72% 32%,
+            color-mix(in srgb,var(--theme-tertiary) 35%,transparent),
+            transparent 36%
+        ),
+        linear-gradient(
+            90deg,
+            var(--theme-hero-start) 0%,
+            var(--theme-hero-mid) 55%,
+            var(--theme-hero-end) 100%
+        );
+}
+
+body.theme-active .home-photo-hero::before{
+    background-image:
+        linear-gradient(
+            color-mix(in srgb,var(--theme-primary) 6%,transparent) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            color-mix(in srgb,var(--theme-primary) 6%,transparent) 1px,
+            transparent 1px
+        );
+}
+
+body.theme-active .home-hero-photo{
+    background:var(--theme-hero-mid);
+}
+
+
+/*
+   A bright opaque wash on the copy side makes the current
+   photograph compatible with the light palettes without
+   changing the image itself.
+*/
+
+body.theme-active .home-hero-photo::after{
+    background:
+        linear-gradient(
+            90deg,
+            rgba(var(--theme-photo-light-rgb),.99) 0%,
+            rgba(var(--theme-photo-light-rgb),.97) 17%,
+            rgba(var(--theme-photo-light-rgb),.91) 31%,
+            rgba(var(--theme-photo-light-rgb),.74) 43%,
+            rgba(var(--theme-photo-light-rgb),.46) 55%,
+            rgba(var(--theme-photo-light-rgb),.18) 70%,
+            rgba(var(--theme-photo-light-rgb),.03) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(var(--theme-photo-light-rgb),.28) 0%,
+            rgba(var(--theme-photo-light-rgb),.06) 56%,
+            rgba(var(--theme-photo-light-rgb),.12) 100%
+        );
+}
+
+body.rtl.theme-active .home-hero-photo::after{
+    background:
+        linear-gradient(
+            270deg,
+            rgba(var(--theme-photo-light-rgb),.99) 0%,
+            rgba(var(--theme-photo-light-rgb),.96) 23%,
+            rgba(var(--theme-photo-light-rgb),.82) 42%,
+            rgba(var(--theme-photo-light-rgb),.48) 61%,
+            rgba(var(--theme-photo-light-rgb),.10) 82%,
+            rgba(var(--theme-photo-light-rgb),.02) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(var(--theme-photo-light-rgb),.28),
+            rgba(var(--theme-photo-light-rgb),.05) 58%,
+            rgba(var(--theme-photo-light-rgb),.12)
+        );
+}
+
+body.theme-active .home-hero-title{
+    color:var(--theme-primary);
+    text-shadow:0 2px 20px rgba(var(--theme-photo-light-rgb),.55);
+}
+
+body.theme-active .home-hero-lead{
+    color:color-mix(in srgb,var(--theme-primary) 74%,transparent);
+}
+
+body.theme-active .home-photo-hero .btn-outline{
+    color:var(--theme-primary);
+    border-color:color-mix(in srgb,var(--theme-primary) 45%,transparent);
+    background:color-mix(in srgb,var(--theme-surface) 20%,transparent);
+}
+
+body.theme-active .home-photo-hero .btn-outline:hover{
+    color:var(--gold-dark);
+    border-color:var(--gold);
+    background:color-mix(in srgb,var(--theme-surface) 52%,transparent);
+}
+
+body.theme-active .home-hero-motto{
+    color:color-mix(in srgb,var(--theme-primary) 54%,transparent);
+}
+
+
+/* Keep the copy wash strong enough on tablets and phones. */
+
+@media(max-width:980px){
+
+    body.theme-active .home-hero-photo::after{
+        background:
+            linear-gradient(
+                90deg,
+                rgba(var(--theme-photo-light-rgb),.98) 0%,
+                rgba(var(--theme-photo-light-rgb),.94) 35%,
+                rgba(var(--theme-photo-light-rgb),.70) 63%,
+                rgba(var(--theme-photo-light-rgb),.26) 100%
+            ),
+            linear-gradient(
+                0deg,
+                rgba(var(--theme-photo-light-rgb),.34),
+                rgba(var(--theme-photo-light-rgb),.05) 58%,
+                rgba(var(--theme-photo-light-rgb),.13)
+            );
+    }
+
+    body.rtl.theme-active .home-hero-photo::after{
+        background:
+            linear-gradient(
+                270deg,
+                rgba(var(--theme-photo-light-rgb),.98) 0%,
+                rgba(var(--theme-photo-light-rgb),.94) 35%,
+                rgba(var(--theme-photo-light-rgb),.70) 63%,
+                rgba(var(--theme-photo-light-rgb),.26) 100%
+            ),
+            linear-gradient(
+                0deg,
+                rgba(var(--theme-photo-light-rgb),.34),
+                rgba(var(--theme-photo-light-rgb),.05) 58%,
+                rgba(var(--theme-photo-light-rgb),.13)
+            );
+    }
+}
+
+@media(max-width:620px){
+
+    body.theme-active .home-hero-photo::after{
+        background:
+            linear-gradient(
+                90deg,
+                rgba(var(--theme-photo-light-rgb),.98) 0%,
+                rgba(var(--theme-photo-light-rgb),.92) 48%,
+                rgba(var(--theme-photo-light-rgb),.54) 78%,
+                rgba(var(--theme-photo-light-rgb),.24) 100%
+            ),
+            linear-gradient(
+                0deg,
+                rgba(var(--theme-photo-light-rgb),.42),
+                rgba(var(--theme-photo-light-rgb),.08) 58%,
+                rgba(var(--theme-photo-light-rgb),.16)
+            );
+    }
+}

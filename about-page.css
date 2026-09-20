@@ -1514,3 +1514,193 @@ body.rtl
     }
 
 }
+
+/* =========================================================
+   LIGHT THEME OVERRIDES — ABOUT PAGE
+   ========================================================= */
+
+.about-page.theme-active{
+    background:var(--theme-page-bg);
+    color:var(--theme-text);
+}
+
+.about-page.theme-active .eyebrow.dark{
+    color:var(--theme-accent-text);
+}
+
+
+/* Hero remains photographic, but the overlay is palette-tinted. */
+
+.about-page.theme-active .about-hero{
+    background:var(--theme-primary);
+    color:#fff;
+}
+
+.about-page.theme-active .about-hero-overlay{
+    background:
+        linear-gradient(
+            90deg,
+            rgba(var(--theme-photo-dark-rgb),.94) 0%,
+            rgba(var(--theme-photo-dark-rgb),.86) 24%,
+            rgba(var(--theme-photo-dark-rgb),.65) 42%,
+            rgba(var(--theme-photo-dark-rgb),.30) 60%,
+            rgba(var(--theme-photo-dark-rgb),.06) 80%,
+            rgba(var(--theme-photo-dark-rgb),.02) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(var(--theme-photo-dark-rgb),.24) 0%,
+            rgba(var(--theme-photo-dark-rgb),.04) 60%,
+            rgba(var(--theme-photo-dark-rgb),.11) 100%
+        );
+}
+
+body.rtl.about-page.theme-active .about-hero-overlay{
+    background:
+        linear-gradient(
+            270deg,
+            rgba(var(--theme-photo-dark-rgb),.94) 0%,
+            rgba(var(--theme-photo-dark-rgb),.86) 24%,
+            rgba(var(--theme-photo-dark-rgb),.65) 42%,
+            rgba(var(--theme-photo-dark-rgb),.30) 60%,
+            rgba(var(--theme-photo-dark-rgb),.06) 80%,
+            rgba(var(--theme-photo-dark-rgb),.02) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(var(--theme-photo-dark-rgb),.24),
+            rgba(var(--theme-photo-dark-rgb),.04) 60%,
+            rgba(var(--theme-photo-dark-rgb),.11)
+        );
+}
+
+
+/* Who we are */
+
+.about-page.theme-active .about-who{
+    background:var(--theme-page-bg);
+    color:var(--theme-text);
+}
+
+.about-page.theme-active .about-who-copy h2,
+.about-page.theme-active .about-story-copy h2{
+    color:var(--theme-primary);
+}
+
+.about-page.theme-active .about-who-copy p,
+.about-page.theme-active .about-story-copy p{
+    color:var(--theme-muted);
+}
+
+.about-page.theme-active .about-specs{
+    border-top-color:var(--theme-border);
+    border-bottom-color:var(--theme-border);
+}
+
+.about-page.theme-active .about-spec{
+    border-right-color:var(--theme-border);
+}
+
+.about-page.theme-active .about-spec > span{
+    color:color-mix(in srgb,var(--theme-primary) 24%,transparent);
+}
+
+.about-page.theme-active .about-spec strong{
+    color:var(--theme-primary);
+}
+
+.about-page.theme-active .about-spec small{
+    color:var(--theme-accent-text);
+}
+
+.about-page.theme-active .about-who-image{
+    background:var(--theme-primary);
+}
+
+
+/* Vision / mission / values */
+
+.about-page.theme-active .about-values-panel{
+    background:
+        linear-gradient(
+            150deg,
+            var(--theme-strong),
+            color-mix(in srgb,var(--theme-strong) 78%,var(--theme-page-bg))
+        );
+    color:var(--theme-strong-text);
+}
+
+.about-page.theme-active .about-value-item{
+    border-color:var(--theme-strong-border);
+}
+
+.about-page.theme-active .about-value-number,
+.about-page.theme-active .about-value-item h3{
+    color:var(--theme-accent-text);
+}
+
+.about-page.theme-active .about-value-item p,
+.about-page.theme-active .about-values-list span{
+    color:var(--theme-strong-muted);
+}
+
+
+/* Legacy leadership block — styled even if currently unused in HTML. */
+
+.about-page.theme-active .about-leadership{
+    background:var(--theme-strong);
+    color:var(--theme-strong-text);
+}
+
+.about-page.theme-active .about-leadership .eyebrow,
+.about-page.theme-active .leadership-name-block span,
+.about-page.theme-active .leadership-details small{
+    color:var(--theme-accent-text);
+}
+
+.about-page.theme-active .leadership-copy h2,
+.about-page.theme-active .leadership-name-block h3,
+.about-page.theme-active .leadership-details strong{
+    color:var(--theme-strong-text);
+}
+
+.about-page.theme-active .leadership-copy > p,
+.about-page.theme-active .leadership-photo-tag,
+.about-page.theme-active .leadership-signature small{
+    color:var(--theme-strong-muted);
+}
+
+.about-page.theme-active .leadership-name-block,
+.about-page.theme-active .leadership-details,
+.about-page.theme-active .leadership-details > div{
+    border-color:var(--theme-strong-border);
+}
+
+
+/* Story */
+
+.about-page.theme-active .about-story{
+    background:var(--theme-surface-soft);
+}
+
+.about-page.theme-active .about-parent-company{
+    color:var(--theme-accent-text);
+}
+
+.about-page.theme-active .about-story-card figcaption{
+    color:var(--theme-muted);
+}
+
+
+/* RTL spec dividers */
+
+body.rtl.about-page.theme-active .about-spec{
+    border-left-color:var(--theme-border);
+}
+
+@media(max-width:620px){
+
+    .about-page.theme-active .about-spec{
+        border-bottom-color:var(--theme-border);
+    }
+}
