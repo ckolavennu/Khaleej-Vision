@@ -3247,3 +3247,74 @@ body.theme-active .footer-grid h4{
 body.theme-active .footer-bottom{
     border-top-color:rgba(255,255,255,.10);
 }
+
+
+.site-header .brand-lockup,
+.site-header .kv-selected-logo-lockup {
+  display: flex !important;
+  align-items: center !important;
+  flex: 0 1 405px;
+  width: min(405px, 100%) !important;
+  max-width: 405px !important;
+  min-width: 0 !important;
+}
+
+.site-header .kv-brand-logo {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+.site-footer .footer-lockup,
+.site-footer .kv-selected-logo-lockup {
+  display: block !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.site-footer .kv-brand-logo {
+  display: block;
+  width: min(270px, 100%) !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+@media (max-width: 1180px) {
+  .site-header .brand-lockup,
+  .site-header .kv-selected-logo-lockup {
+    flex-basis: 325px;
+    width: min(325px, 100%) !important;
+    max-width: 325px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .desktop-nav, .btn-nav { display: none; }
+  .menu-toggle { display: block; }
+  .site-header .nav-wrap { height: 88px !important; }
+}
+
+@media (max-width: 620px) {
+  .site-header .brand-lockup,
+  .site-header .kv-selected-logo-lockup {
+    flex: 0 1 245px;
+    width: min(245px, 100%) !important;
+    max-width: 245px !important;
+  }
+  .site-footer .kv-brand-logo { width: min(250px, 100%) !important; }
+}
+
+
+/* Slightly larger header logo on desktop */
+@media (min-width: 1450px) {
+  .site-header .brand-lockup,
+  .site-header .kv-selected-logo-lockup {
+    flex: 0 0 465px;
+    width: 465px !important;
+    max-width: 465px !important;
+  }
+}

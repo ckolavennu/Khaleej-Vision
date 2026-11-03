@@ -25,7 +25,7 @@ Engineering Consultancy is intentionally broad and should be refined after the c
 ## Contact details currently included
 Phone: +968 7114 7179
 WhatsApp: +968 9729 7224
-Email: fahadbasheer724@gmail.com
+Email: info@khaleejvision.com
 Address: Floor 3, Office 32, Modern Tower, Burger Garage Building, Souq, Al Khoudh St, Seeb 112, Oman.
 
 ## Run locally

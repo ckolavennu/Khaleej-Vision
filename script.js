@@ -163,15 +163,19 @@
       );
 
 
-    targets.forEach(target => {
+  targets.forEach(target => {
 
-      target.innerHTML = `
-        <img
-          class="kv-brand-logo"
-          src="assets/khaleej-vision-option3-selected-dark.png"
-          alt="Khaleej Vision — Land Surveying & Engineering Consultancy"
-        >
-      `;
+    const logoSrc = target.classList.contains('footer-lockup')
+      ? 'assets/khaleej-vision-logo-footer-light.png'
+      : 'assets/khaleej-vision-logo-header-horizontal.png';
+
+    target.innerHTML = `
+      <img
+        class="kv-brand-logo"
+        src="${logoSrc}"
+        alt="Khaleej Vision Engineering Consultancy"
+      >
+    `;
 
 
       target.classList.add(

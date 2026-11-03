@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1510" width="1600" height="1510" role="img" aria-labelledby="title desc">
+  <title id="title">Khaleej Vision — five logo directions</title>
+  <desc id="desc">Five preliminary brand concepts for Khaleej Vision Engineering Consultancy: typographic signature, structural joint, contour cut, reference field, and bilingual letterform.</desc>
+  <rect width="1600" height="1510" fill="#F7F4ED"/>
+  <text x="72" y="73" fill="#0B1623" font-family="Georgia,serif" font-size="41" font-weight="bold">Khaleej Vision</text>
+  <text x="72" y="111" fill="#6E6252" font-family="Segoe UI,Arial,sans-serif" font-size="20" letter-spacing="2">FIVE LOGO DIRECTIONS · EXPLORATION ONLY</text>
+  <text x="1528" y="96" fill="#9A6E2F" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="18">Gold · navy · ivory</text>
+
+  <!-- A: a wordmark led by one measured gold rule instead of an instrument symbol. -->
+  <g transform="translate(40 150)">
+    <rect width="1520" height="245" rx="16" fill="#0B1623"/>
+    <text x="34" y="48" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" letter-spacing="2">A · TYPOGRAPHIC SIGNATURE</text>
+    <text x="76" y="126" fill="#F7F4ED" font-family="Georgia,serif" font-size="61" font-weight="bold" letter-spacing="2">KHALEEJ VISION</text>
+    <path d="M78 143 H388 M414 143 H702" fill="none" stroke="#BC8F3C" stroke-width="5"/>
+    <path d="M388 143 L401 156 L414 143" fill="none" stroke="#BC8F3C" stroke-width="5" stroke-linejoin="miter"/>
+    <text x="80" y="189" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="4">ENGINEERING CONSULTANCY</text>
+    <text x="930" y="113" fill="#F7F4ED" font-family="Segoe UI,Arial,sans-serif" font-size="24">The name is the mark.</text>
+    <text x="930" y="151" fill="#AEB5BA" font-family="Segoe UI,Arial,sans-serif" font-size="18">A quiet gold cut adds a measured signature.</text>
+    <text x="930" y="200" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="16">Small: wordmark only, without subtitle</text>
+  </g>
+
+  <!-- B: K and V share a central structural spine. -->
+  <g transform="translate(40 415)">
+    <rect width="1520" height="245" rx="16" fill="#38332C"/>
+    <text x="34" y="48" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" letter-spacing="2">B · STRUCTURAL JOINT</text>
+    <g transform="translate(75 68)" fill="#BC8F3C">
+      <path d="M0 0 H23 V49 L73 0 H103 L48 55 L106 137 H77 L30 69 L23 76 V137 H0 Z"/>
+      <path d="M104 0 H129 L164 93 L199 0 H224 L176 137 H151 Z"/>
+      <path d="M111 53 L145 97 L137 119 L94 66 Z" fill="#9A6E2F"/>
+    </g>
+    <text x="350" y="126" fill="#F7F4ED" font-family="Georgia,serif" font-size="54" font-weight="bold" letter-spacing="2">KHALEEJ VISION</text>
+    <text x="352" y="171" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="4">ENGINEERING CONSULTANCY</text>
+    <text x="1040" y="108" fill="#F7F4ED" font-family="Segoe UI,Arial,sans-serif" font-size="23">Two fitted members.</text>
+    <text x="1040" y="148" fill="#C8C0B6" font-family="Segoe UI,Arial,sans-serif" font-size="18">Precision through structure.</text>
+    <g transform="translate(1392 165) scale(.27)" fill="#BC8F3C"><path d="M0 0 H23 V49 L73 0 H103 L48 55 L106 137 H77 L30 69 L23 76 V137 H0 Z"/><path d="M104 0 H129 L164 93 L199 0 H224 L176 137 H151 Z"/></g>
+    <text x="1450" y="211" fill="#C8C0B6" font-family="Segoe UI,Arial,sans-serif" font-size="13">small</text>
+  </g>
+
+  <!-- C: one topographic line opens into a view rather than closing as an eye. -->
+  <g transform="translate(40 680)">
+    <rect width="1520" height="245" rx="16" fill="#0B1623"/>
+    <text x="34" y="48" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" letter-spacing="2">C · CONTOUR CUT</text>
+    <g transform="translate(84 76)" fill="none" stroke="#BC8F3C" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M7 92 C38 28 76 27 109 70 C139 110 180 102 205 47" stroke-width="17"/>
+      <path d="M5 129 C42 65 79 64 108 104 C137 142 177 136 211 84" stroke-width="12"/>
+      <path d="M109 70 L109 104" stroke-width="10" stroke="#D8B66A"/>
+    </g>
+    <text x="350" y="126" fill="#F7F4ED" font-family="Georgia,serif" font-size="54" font-weight="bold" letter-spacing="2">KHALEEJ VISION</text>
+    <text x="352" y="171" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="4">ENGINEERING CONSULTANCY</text>
+    <text x="1040" y="108" fill="#F7F4ED" font-family="Segoe UI,Arial,sans-serif" font-size="23">Terrain, read clearly.</text>
+    <text x="1040" y="148" fill="#AEB5BA" font-family="Segoe UI,Arial,sans-serif" font-size="18">Survey data shaped into direction.</text>
+    <g transform="translate(1393 163) scale(.27)" fill="none" stroke="#BC8F3C" stroke-linecap="square"><path d="M7 92 C38 28 76 27 109 70 C139 110 180 102 205 47" stroke-width="17"/><path d="M5 129 C42 65 79 64 108 104 C137 142 177 136 211 84" stroke-width="12"/></g>
+    <text x="1450" y="211" fill="#AEB5BA" font-family="Segoe UI,Arial,sans-serif" font-size="13">small</text>
+  </g>
+
+  <!-- D: an offset datum creates one deliberate step inside a measured field. -->
+  <g transform="translate(40 945)">
+    <rect width="1520" height="245" rx="16" fill="#38332C"/>
+    <text x="34" y="48" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" letter-spacing="2">D · REFERENCE FIELD</text>
+    <g transform="translate(92 75)" fill="none" stroke="#BC8F3C" stroke-width="13" stroke-linejoin="miter">
+      <path d="M0 0 H140 V137 H0 Z"/>
+      <path d="M0 90 H62 V47 H140"/>
+      <path d="M62 90 V137"/>
+    </g>
+    <text x="350" y="126" fill="#F7F4ED" font-family="Georgia,serif" font-size="54" font-weight="bold" letter-spacing="2">KHALEEJ VISION</text>
+    <text x="352" y="171" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="4">ENGINEERING CONSULTANCY</text>
+    <text x="1040" y="108" fill="#F7F4ED" font-family="Segoe UI,Arial,sans-serif" font-size="23">One deliberate datum.</text>
+    <text x="1040" y="148" fill="#C8C0B6" font-family="Segoe UI,Arial,sans-serif" font-size="18">Accuracy made architectural.</text>
+    <g transform="translate(1406 165) scale(.35)" fill="none" stroke="#BC8F3C" stroke-width="13"><path d="M0 0 H140 V137 H0 Z"/><path d="M0 90 H62 V47 H140"/><path d="M62 90 V137"/></g>
+    <text x="1460" y="211" fill="#C8C0B6" font-family="Segoe UI,Arial,sans-serif" font-size="13">small</text>
+  </g>
+
+  <!-- E: bilingual study; Arabic letterform must be reviewed by a native reader. -->
+  <g transform="translate(40 1210)">
+    <rect width="1520" height="245" rx="16" fill="#0B1623"/>
+    <text x="34" y="48" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" letter-spacing="2">E · BILINGUAL LETTERFORM</text>
+    <text x="89" y="192" fill="#BC8F3C" font-family="Georgia,serif" font-size="139" font-weight="bold">K</text>
+    <text x="188" y="180" fill="#D8B66A" font-family="Tahoma,Arial,sans-serif" font-size="112">خ</text>
+    <path d="M183 84 V191" stroke="#9A6E2F" stroke-width="4"/>
+    <text x="350" y="126" fill="#F7F4ED" font-family="Georgia,serif" font-size="54" font-weight="bold" letter-spacing="2">KHALEEJ VISION</text>
+    <text x="352" y="171" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="4">ENGINEERING CONSULTANCY</text>
+    <text x="1040" y="108" fill="#F7F4ED" font-family="Segoe UI,Arial,sans-serif" font-size="23">Two scripts, one home.</text>
+    <text x="1040" y="148" fill="#AEB5BA" font-family="Segoe UI,Arial,sans-serif" font-size="18">Latin K meets Arabic kha.</text>
+    <text x="1040" y="193" fill="#D8B66A" font-family="Segoe UI,Arial,sans-serif" font-size="16">Needs Arabic-reading review</text>
+  </g>
+  <text x="72" y="1484" fill="#6E6252" font-family="Segoe UI,Arial,sans-serif" font-size="17">Concept drawings only. Live type must be refined and outlined before production; none has been checked for trademark similarity.</text>
+</svg>
